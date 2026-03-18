@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+    src="https://code.jquery.com/jquery-1.12.4.js"
+    integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/newssub.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+    <title>아난티 호텔 포트폴리오 작업실</title>
+
+    <script>
+      $(function(){
+        
+        $("#menu_open").mouseover( function() {
+         // alert("강혜림 똑순이");
+          $("#navbox").fadeIn();
+        });
+    
+        $("#menu_close").click(function(){
+          $("#navbox").fadeOut();
+        });
+    
+        $("#submenu_3").mouseover(function(){
+          $(".navbox").css("padding-bottom", "128px")
+        });
+    
+        $("#submenu_3").mouseout(function(){
+          $(".navbox").css("padding-bottom", "288px")
+        });
+
+        $(".viewmore1").click(function(){
+            $(".news_window").slideDown();
+        });
+
+        $(".viewclose").click(function(){
+          $(".news_window").slideUp();
+        });
+    
+    
+      });
+      </script>
+</head>
+
+<body>
+
+  <!-- 세로 메인메뉴 만들기 -->
+ <div class="navbox" id="navbox" style="z-index: 10;">
+
+  <div class="menu_name">
+    <ul>
+      <li><a href="anantimain.html">ANANTI HILTON BUSAN</a></li>
+      <li id="menu_close">X</li>
+      <li class="clear"></li>
+    </ul>
+  </div>
+
+    <ul class="nav">
+      
+      <li><a href="roomsub1.html">Accomodation</a>
+      <!--
+            <ul class="submenu">
+                <li><a href="#">menu1-1</a></li>
+                <li><a href="#">menu1-2</a></li>
+                <li><a href="#">menu1-3</a></li>
+                <li><a href="#">menu1-4</a></li>
+              </ul>-->
+        </li>
+      <li><a href="facilitysub.html" >Facility</a>
+
+             <!--
+            <ul class="submenu">
+                <li><a href="#">menu1-1</a></li>
+                <li><a href="#">menu1-2</a></li>
+                <li><a href="#">menu1-3</a></li>
+                <li><a href="#">menu1-4</a></li>
+              </ul>-->
+        </li>
+        
+      <li id="submenu_3"><a href="travelsub.html">Promotion</a>
+             
+            <ul class="submenu">
+                <li><a href="travelsub.html">Travel</a></li>
+                <li><a href="newssub.html">News</a></li>
+                <!-- <li><a href="eventsub.html">Program</a></li> -->
+              </ul>
+        </li>
+        
+
+      
+    </ul>
+</div>
+
+ <!-- 메인 페이지 제작 헤더-비주얼 -->
+    <header>
+      <div class="main_container">
+
+          <div class="navi_bg">
+            <ul>
+                <li id="menu_open">
+                
+                    <i class="fas fa-bars menu f-18"></i> MENU
+                 
+                </li>
+                <li class="f-rix">
+                  <a href="../html/anantimain.html"> <img src="../img/common/logo.png" alt=""></a>
+                </li>
+                <li>
+                    <span class="f-12">KR <i class="fas fa-caret-down "></i></span>
+                    &nbsp;
+                    &nbsp;
+                    <span class="f-12">Book</span>
+                </li>
+            </ul>
+          </div>
+
+      <!-- visual 배경 -->
+          <div class="visual_bg">
+
+            <div class="visualtext">
+                <b class="f-24"> ANANTI HILTON BUSAN </b> <br>
+                <br>
+                도심속에서 만나는 휴식처 <br>
+                <br>
+                부산의 오염되지 않은 천혜의 바다와 자연경관을 그대로 간직한<br>
+                아난티 힐튼 부산에서 프라이빗한 휴식을 선사합니다.
+            </div>
+
+          </div>
+          
+        </div>
+    </header>
+
+
+
+    <!-- 섹션 시작 -->
+
+   <!-- 섹션1  start -->
+    
+    <section class="sec01">
+    
+  
+      <div class="sec01_content">
+
+        <div class="sec01_box"> <!--카테고리 박스-->
+
+          <p class="sec01_title f-24">프로모션</p>
+
+
+         <hr>
+
+          <p class="f-18 sec01_article">
+            <a href="travelsub.html"  class="sec01_hovtitle">주변관광지</a><br>
+            <a href="newssub.html" class="sec01_hovtitle"> <b>아난티 소식지</b></a>
+          </p>
+
+
+        </div> 
+        
+      </div>
+      
+
+
+
+    </section>
+    
+
+
+<!-- section02 section start -->
+
+    <section class="sec02">
+
+                      <!-- 뉴스 윈도우 시작 -->
+                      <div class="news_window">
+                       
+                        <button class="btn3 f-18 viewclose">close</button>
+                        <p class="news_widow_article">
+                          이제는 아난티 앱으로 모바일 체크인
+
+                              프런트에 매번 방문해서 대기하실 필요 없습니다.
+                              이제는 앱으로 편하게 체크인을 마치고 바로 객실로 이동해보세요.
+
+                              모바일 체크인
+
+                              오후 2시부터 모바일 체크인 서비스를 이용할 수 있어요
+                              *아난티 코드에 도착하셔야 가능합니다.
+                              *위치 정보 제공에 꼭 동의해 주세요.
+                              *복수의 객실을 예약한 경우, 각각 체크인을 해주세요
+
+                              모바일 체크인을 진행할 예약번호를 선택합니다.
+
+                              회원 확인을 위한 안면 인증이 진행됩니다
+
+                              원하는 객실도 선택할 수 있어요
+
+                              등록카드 서명하면 체크인과 모바일 키 발급도 끝!
+
+                              모바일 키
+
+                              체크인
+
+                              아난티 앱 메인의 [+] 버튼을 눌러 모바일 키를 확인해 주세요.
+                              *블루투스를 꼭 허용해 주세요.
+
+                              모바일 키를 실행해 도어락에 태그하면 객실 문이 찰칵!
+
+                              모바일 키는 일행과 공유도 가능합니다 
+
+                              체크 아웃
+
+                              아난티 앱 메인의 [+] 버튼을 눌러 모바일 체크 아웃을 선택합니다.
+
+                              *체크인 당일에는 이용이 어렵습니다.
+                              *객실 이용료, 배달, 미니바 등 결제할 요금이 있을 시에는 프런트를 방문해주세요.
+                              *복수의 객실을 예약한 경우, 각각 체크아웃 해주세요
+
+                              모바일 체크아웃을 진행 할 예약번호를 선택합니다
+
+                              체크아웃 안내에 동의해주시면 완료됩니다.
+                        </p>
+                        <img src="../img/news/check_in.jpg" alt="">
+                      </div>
+
+                      <!-- <div class="news_window1 news1" >
+                       
+                        <button class="btn3 f-18 viewclose">close</button>
+                        <p class="news_widow_article1">
+                          <b class="f-20">라메르, 오싹오싹 할로윈 디너</b>
+                              일시<br>
+                              10월 31일(월) 18:00~21:00 (Last order 20:00) <br>
+
+                              장소<br>
+                              라메르<br>
+
+                              메뉴<br>
+                              -성인 코스: 할로윈 웰컴 칵테일, 아뮤즈 부쉬, 애피타이저, <br>핫디쉬, 한우 채끝 + 할로윈 스폐셜 디져트 뷔페 + 와인 페어링<br>
+                              -어린이 코스: 할로윈 음료, 아뮤즈 부쉬, 애피타이저, 메인디쉬 + 할로윈 스폐셜 디져트 뷔페<br>
+
+                              가격<br>
+                              성인 100,000원, 어린이 50,000원<br>
+
+                              혜택<br>
+                              할로윈 코스튬 착용 어린이 고객에 할로윈 선물 증정, 어린이 <br>고객 할로윈 핸드 페인팅, 할로윈 머리티 증정
+
+                              문의<br>
+                              051-604-7052 / 051-604-7053 *사전예약필수<br>
+                        </p>
+                        <img src="../img/news/party.jpg" alt="">
+                      </div>
+
+                      <div class="news_window2 news2" >
+                       
+                        <button class="btn3 f-18 viewclose">close</button>
+                        <p class="news_widow_article2">
+                         <b class="f-20"> [아난티 회원] 시니어 패키지</b><br><br>
+                          인터넷으로 객실을 예약하기가 불편하셨던<br><br>
+                          70세 이상 시니어 회원님들을 위하여<br><br>
+                          ‘시니어 패키지 Senior Package’ 를 운영합니다.<br><br>
+                          
+                          한 달에 한 번씩 원하는 날짜를 선택해 주시면<br><br>
+                          아난티 직원이 유선으로 편리하게 예약을 대행해 드리죠.<br><br>
+                          
+                          이제는 시니어 패키지를 이용해 전화로 간편하게 예약하고<br><br>
+                          마음 편히 즐기기만 하세요.
+                        </p>
+                        <img src="../img/news/senior.jpg" alt="">
+                      </div> -->
+                    <!-- 뉴스 윈도우 끝 -->
+
+      <!-- 섹션2 제목 -->
+      <div class="sec02_topcontent">
+        <div class="f-24 sec02_title">ANANTI NEWS</div>
+        <div class="sec02line"></div>
+      </div>
+
+      <!-- sec02 contents -->
+
+            <div class="sec02_content">
+
+                <div>
+                  <img src="../img/news/check_in.jpg" alt="">
+                  <p class="f-24 sec02_bt"> 아난티 앱으로 모바일 체크인</p>
+                  <p class="f-16">  
+                  프론트에 매번 방문해서 대기하실 필요 없습니다.<br>
+                  이제는 앱으로 편하게 체크인을 마치고 바로 객실로 이동해 보세요.
+                  <p> <br>
+
+                  
+                      <button class="btn3 f-18 viewmore1">view more</button>
+                 
+
+                </div>
+
+                <div>
+                  <div class="sec02_1">
+                    <table>
+                      <tr>
+                        <td  class="f-16">
+
+                            <p class="f-18">  라메르, 오싹오싹 할로윈 디너</p> 
+                            <br>
+                          
+                            으스스한 할로윈 저녁, <br>
+                            라메르에서 펼쳐지는 아주 특별한 이벤트<br>
+                            지금 바로 만나보세요!<br>
+                            <br>
+                  
+                              <button class="btn4 f-14 viewmore1">view more</button>
+                       
+                          
+                        </td>
+                        <td><img src="../img/news/party.jpg" alt=""></td>
+                      </tr>
+                    </table>
+
+                  </div>
+                  <br> <br>
+                  
+                  <div class="sec02_1">
+                    <table>
+                      <tr>
+                        <td  class="f-16">
+
+                          <p class="f-18">2022-2023 시니어 패키지</p> 
+                          <br>
+                          인터넷으로 객실을 예약하기가 불편하셨던 <br>
+                            70세 이상 시니어 회원님들을 위한 패키지 <br>
+                            '시니어 패키지'를 운영합니다. <br>
+                            <br>
+                         
+                              <button class="btn4 f-14 viewmore1">view more</button>
+                          
+                          
+                        </td>
+                        <td><img src="../img/news/senior.jpg" alt=""></td>
+                      </tr>
+                    </table>
+                  </div>
+
+
+            </div>
+
+    </section>
+
+<!-- section02 section end-->
+
+
+
+
+     
+<!-- section03 promotion start-->
+
+<section class="sec03">
+
+      <!-- 섹션2 제목 -->
+      <div class="sec03_topcontent">
+        <div class="sec03line"></div>
+        <div class="f-24 sec03_title">ANANTI NEWS</div>
+
+      </div>
+
+  <!-- sec03 contents -->
+
+  <div class="sec03_content">
+    <ul>
+    <li>
+      <img src="../img/news/kids_playing.png" alt="">
+      <p class="f-18">키즈 프로그램</p> 
+      <br>
+      
+          골대를 향해 잔디밭을 가르며 날아가는 플라잉 디스크는
+          아이들에게 성취감을 맛보게 하는 흥미진진한 놀이입니다.
+          온 가족이 함께 플라잉 디스크에 도전해보세요! <br>
+      <br>
+      <a href="https://ananti.kr/ko/cove" target="_blank">
+        <button class="btn4 f-14">view more</button>
+      </a>
+    </li>
+    
+    <li>
+      <img src="../img/news/party1.png" alt="">
+      <p class="f-18">2022-2023 아난티 회원 혜택 안내</p> 
+      <br>
+      아난티 앳 강남 오픈에 따라
+      
+      아난티 회원 혜택이 더욱 강화 됩니다
+      
+      제주,부산,청평등 아난티의 새로운 이야기와  그만큼
+      
+      더욱 확대될 다양한 회원 혜택을 기대해 주세요. <br>
+      <br>
+      <a href="https://ananti.kr/ko/cove" target="_blank">
+        <button class="btn4 f-14">view more</button>
+      </a>
+    </li>
+
+    <li>
+      <img src="../img/news/kids_play.png" alt="">
+      <p class="f-18">액티비티 스탬프</p> 
+      <br>
+      <!-- <p class="sec03_article f-16"> -->
+        ① 아난티 정원에서 연 날려보고 인증샷 찍기 <br>
+        ② 꽃마차 인생샷 남기기<br>
+        ③ 키즈 프로그램 참여하기 (무료 또는 유료)<br>
+        ④ 헬스&라이프 프로그램 즐기기 (유료) <br>
+      <br>
+      <a href="https://ananti.kr/ko/cove" target="_blank">
+        <button class="btn4 f-14">view more</button>
+      </a>
+    </li>
+    
+
+    </ul>   
+     <div class="clear"></div>
+
+   
+  </div>
+
+</section>
+
+
+<!-- section03 promotion end-->
+
+
+
+
+
+
+<div class="line2"></div>
+
+
+<!-- footer -->
+
+
+<section class="sec06">
+
+  
+  <div class="sec06_imgbox">
+    <div class="sec06_box1">
+      <p class="f-24">ANANTI HILTON BUSAN</p>
+      <p>
+        268-32, Gijanghaean-ro, Gijang-eup, Gijang-gun, Busan, Korea 46083<br>
+        T. 대표번호 +82 (0)51-509-1111 | 객실 예약 +82 (0)51-509-1114<br>
+        F. (0)51-509-2620 E. pushi_hotel@hilton.com 사업자등록번호 : 483-85-00667<br>
+        대표이사 : 이만규<br>
+        Copyright © 2017 All rights reserved ANANTI HILTON BUSAN
+      </p>
+    </div>
+
+    <div class="sec06_box2">
+      <p class="f-18">MENU</p>
+      <p>
+        <a href="roomsub.html">ACCOMODATION</a><br>
+        <a href="facilitysub.html">Facility</a><br>
+        <a href="promotionsub.html">Promotion</a><br>
+        <a href="diningsub.html">Dining</a><br>
+        <a href="positionsub.html">Position</a>
+      </p>
+    </div>
+
+    <div class="sec06_box3">
+      <p class="f-18">Follow Us</p>
+      <p>
+        <a href="https://ko-kr.facebook.com/theananti/" target="_blank"><i class="fab fa-facebook-square f-24"></i></a>
+        <a href="https://www.instagram.com/ananti_life/" target="_blank"><i class="fab fa-instagram f-24"></i></a>
+      </p>
+    </div>
+
+    <div class="sec06_box4">
+      <p class="f-18">Subscribe Now</p>
+      <p>
+        <input type="email" value="" placeholder="Your E-mail">
+       
+      </p>
+    </div>
+
+  </div>
+
+
+</section>
+
+
+  
+
+
+
+
+</body>
+
+</html>

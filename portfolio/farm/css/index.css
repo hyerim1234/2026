@@ -1,0 +1,275 @@
+
+.submenu {
+  position: absolute;
+  top: 100%; left: 0; right: 0;
+  /* 초기 숨김 상태 */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: opacity .2s ease, transform .2s ease;
+}
+
+.group:hover .submenu,
+.group:focus-within .submenu {
+  /* hover 시 나타나기 */
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+/* second section */
+
+
+#c2_wrap::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: calc(50% + 750px);
+    height: 537px;
+    left: 0;
+    z-index: -1;
+    background: url(./../assets/img/c2_bg.jpg) 50% 50% / cover no-repeat;
+}
+
+#c2_wrap .c_tit h2::before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 45px;
+    background-color: #fff;
+    left: 0;
+    top: 5px;
+    position: absolute;
+}
+
+
+/* hover */
+#c2_wrap .list a:hover::before {opacity: 1; transform: translate(-16px, -16px);}
+#c2_wrap .list a:hover .img img {transform: scale(1.1);}
+/* #c2_wrap .list a:hover .txt  {background-color: #fc0606; border-color: #fc0606; } */
+#c2_wrap .c_tit h2 {font-family: "Poppins", sans-serif;}
+
+/* #c2_wrap .list .txt .plus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    transition: all .3s;
+} */
+
+
+#c2_wrap .list li a {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .3s;
+    text-align: left;
+    border-radius: 40px;
+}
+
+
+#c2_wrap .list li a::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    border: 4px solid #fc0606;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all .3s;
+    opacity: 0;
+    border-radius: inherit;
+    pointer-events: none;
+}
+
+
+
+
+
+/* section 3 */
+
+#c3_wrap::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 190px;
+    width: 100%;
+    height: 1px;
+    background: #e5dcdc;
+    z-index: -1;
+    pointer-events: none;
+    max-width: 1500px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#c3_wrap {
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    padding: 90px 0 65px;
+    overflow: hidden;
+}
+
+
+#c3_wrap .c_tit h2::before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 45px;
+    background-color: #fc0606;
+    left: 0;
+    top: 5px;
+    position: absolute;
+}
+
+#container:after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    content: "";
+}
+
+.slick-track:before, 
+.slick-track:after {
+    display: table;
+    content: '';
+}
+
+
+
+
+  /* 1) 헤더 높이에 맞춰 top을 설정해주세요 */
+  #navBlur {
+    position: fixed;
+    /* top: calc(100% - 1px); */
+    top: 64px;
+    /* 헤더 높이(예: h-16 → 4rem = 64px) */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* 흐림 + 반투명 검정 */
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.1);
+    /* 초깃값 숨기기 */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    /* 클릭 막기 */
+    z-index: 25;
+    /* submenu z-30 아래, main z-0 위 */
+  }
+
+
+  /* show 클래스가 붙으면 opacity 1 */
+  #navBlur.show { opacity: 1;}
+
+
+
+
+ .group{ padding-bottom: 1px;}
+
+
+
+
+  .scroll-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    background: rgba(255,255,255,0.5);
+    color: #333;
+    border: 1px solid #333;
+    cursor: pointer;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+  }
+
+  .scroll-to-top.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .scroll-to-top:not(.hidden) {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+
+
+
+ /* responsive  */
+@media screen and (max-width: 1024px) {
+    #c2_wrap .c_tit h2::before {
+        width: 40px;
+        height: 4px;
+        position: static;
+        margin: 0 auto 20px;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+   
+    #c2_wrap {
+        padding: 50px 0;
+        text-align: center;
+    }
+
+
+    #c2_wrap .c_inner {
+        padding: 0 20px;
+    }
+
+    #c2_wrap::before {
+        height: 40%;
+    }
+    #c2_wrap .list {
+       
+        margin-top: 30px;
+    }
+
+    #c2_wrap h2{
+        font-size: 20px;
+    }
+}
+    
+
+
+
+
+
+  @media (max-width: 1023.98px) {
+    .card-hover-contents {
+      display: none !important;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1023.98px) {
+    .card-tablet-contents {
+      display: flex !important;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+
+    .card-tablet-contents,
+    .card-hover-contents {
+      display: none !important;
+    }
+  }
+
+

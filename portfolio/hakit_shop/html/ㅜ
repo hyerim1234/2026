@@ -1,0 +1,191 @@
+
+
+  <!-- sec04 -->
+  <section class="sec04">
+    <div class="sec04_content">
+      <h1 class="f-24">- All Product -</h1>
+      <div class="sec04_box1">
+
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+
+        <div class="sec04_item1">
+          <a href="../html/purchase.html">
+            <img src="../img/bestitem_lip.png" alt="">
+            <p>
+              <b class="f-16">벨벳 매트 립</b>
+              <br><br>
+              입술색 절대지켜<br> 착!붙!지!속!
+              <br><br>
+            </p>
+            <p class="line1"></p>
+            <p class="vr_price">
+              13,500 won <i class="far fa-heart vr_right"></i>
+            </p>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="sec04_box1">
+
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+
+        <div class="sec04_item1">
+          <img src="../img/05_product_02.png" alt="">
+          <p>
+            <b class="f-16">벨벳 매트 립</b>
+            <br><br>
+            입술색 절대지켜<br> 착!붙!지!속!
+            <br><br>
+          </p>
+          <p class="line1"></p>
+          <p class="vr_price">
+            13,500 won <i class="far fa-heart vr_right"></i>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="sec04_box1">
+
+        <!-- <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i> -->
+
+        <div class="sec04_item1">
+          <!-- <img src="../img/main/bestitem_lip.png" alt="">
+                    <p> 
+                    <b class ="f-16">벨벳 매트 립</b>
+                    <br><br>
+                    입술색 절대지켜<br> 착!붙!지!속!
+                    <br><br>
+                    </p>
+                    <p class="line1"></p>
+                    <p class="vr_price"> 
+                    13,500 won <i class="far fa-heart vr_right"></i>
+                    </p> -->
+        </div>
+
+      </div>
+
+   
+        <div class="sec04_box1">
+
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+
+          <div class="vr_item1">
+            <img src="../img/3rd_05_product_01.png" alt="">
+            <p>
+              <b class="f-16">벨벳 매트 립</b>
+              <br><br>
+              입술색 절대지켜<br> 착!붙!지!속!
+              <br><br>
+            </p>
+            <p class="line1"></p>
+            <p class="vr_price">
+              13,500 won <i class="far fa-heart vr_right"></i>
+            </p>
+          </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- div02 -->
+    <div class="sec04_content">
+      <div class="sec04_box1">
+
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+
+        <div class="sec04_item1">
+          <img src="../img/bestitem_eye1.png" alt="">
+          <p>
+            <b class="f-16">벨벳 매트 립</b>
+            <br><br>
+            입술색 절대지켜<br> 착!붙!지!속!
+            <br><br>
+          </p>
+          <p class="line1"></p>
+          <p class="sec04_price">
+            13,500 won <i class="far fa-heart vr_right"></i>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="sec04_box1"></div>
+
+      <div class="sec04_box1">
+
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+
+        <div class="sec04_item1">
+          <img src="../img/301521988.jpg" alt="">
+          <p>
+            <b class="f-16">벨벳 매트 립</b>
+            <br><br>
+            입술색 절대지켜<br> 착!붙!지!속!
+            <br><br>
+          </p>
+          <p class="line1"></p>
+          <p class="sec04_price">
+            13,500 won <i class="far fa-heart vr_right"></i>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="sec04_box1">
+
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+
+        <div class="sec04_item1">
+          <img src="../img/bestitem_lip.png" alt="">
+          <p>
+            <b class="f-16">벨벳 매트 립</b>
+            <br><br>
+            입술색 절대지켜<br> 착!붙!지!속!
+            <br><br>
+          </p>
+          <p class="line1"></p>
+          <p class="sec04_price">
+            13,500 won <i class="far fa-heart vr_right"></i>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+<!-- section02 -->

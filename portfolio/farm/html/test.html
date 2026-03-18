@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>헤더+네비 풀폭 서브메뉴</title>
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome (햄버거 아이콘) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    /* header 전체를 기준으로 submenu 절대 위치 */
+    #mainHeader {
+      position: relative;
+    }
+    /* 서브메뉴 초기 숨김 */
+    .submenu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      width: 100%;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      pointer-events: none;
+      transition: opacity .2s ease, transform .2s ease;
+      z-index: 30;
+    }
+    /* hover 또는 focus-within 시 보여주기 */
+    .group:hover .submenu,
+    .group:focus-within .submenu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+    /* 블러 오버레이 */
+    #navBlur {
+      position: fixed;
+      top: 64px;        /* 헤더 높이만큼 띄우기 */
+      left: 0;
+      right: 0;
+      bottom: 0;
+      backdrop-filter: blur(8px);
+      background-color: rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .3s ease;
+      z-index: 25;
+    }
+    #navBlur.show {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body class="overflow-x-hidden">
+
+  <!-- 헤더 -->
+  <header id="mainHeader"
+    class="fixed top-0 left-0 w-full z-50 bg-white/0 backdrop-blur-lg transition-all duration-300">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+      <!-- 로고 -->
+      <div class="flex items-center">
+        <img src="https://dummyimage.com/120x40/fff/ff1e1e&text=LOGO" id="logoWhite" class="h-8 block"
+          alt="로고 화이트" />
+        <img src="https://dummyimage.com/120x40/fff/232323&text=LOGO" id="logoBlack" class="h-8 hidden"
+          alt="로고 블랙" />
+      </div>
+
+      <!-- 네비게이션 -->
+      <nav id="navBar" class="hidden lg:flex space-x-12 font-semibold text-white">
+        <ul id="mainNav" class="flex space-x-12">
+          <!-- 회사소개 -->
+          <li class="group">
+            <a href="#" class="header-link">회사소개</a>
+            <div class="submenu bg-white shadow-xl">
+              <div class="grid grid-cols-3">
+                <!-- 왼쪽 설명 -->
+                <div class="col-span-1 bg-red-600 text-white p-6">
+                  <h2 class="text-2xl font-bold">회사소개</h2>
+                  <p class="mt-2 text-sm">
+                    땡스는 농업을 통해 사람들과 연결되고,<br />
+                    상호 협력하며 함께 성장하는 길을 모색합니다.
+                  </p>
+                </div>
+                <!-- 오른쪽 링크 -->
+                <div class="col-span-2 p-6 text-gray-900 flex space-x-8">
+                  <a href="#" class="border-b border-gray-300 pb-1">농업회사법인 땡스(주)</a>
+                  <a href="#" class="border-b border-gray-300 pb-1">오시는 길</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- 사업소개 -->
+          <li class="group">
+            <a href="#" class="header-link">사업소개</a>
+            <div class="submenu bg-white shadow-xl">
+              <div class="grid grid-cols-3">
+                <div class="col-span-1 bg-red-600 text-white p-6">
+                  <h2 class="text-2xl font-bold">사업소개</h2>
+                  <p class="mt-2 text-sm">
+                    다양한 농업 프로젝트를 통해<br />
+                    공동체와 함께 성장합니다.
+                  </p>
+                </div>
+                <div class="col-span-2 p-6 text-gray-900 flex space-x-8">
+                  <a href="#" class="border-b border-gray-300 pb-1">아름다운 연구소</a>
+                  <a href="#" class="border-b border-gray-300 pb-1">농땡이 월드</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- 제품소개 -->
+          <li class="group">
+            <a href="#" class="header-link">제품소개</a>
+            <div class="submenu bg-white shadow-xl">
+              <div class="grid grid-cols-3">
+                <div class="col-span-1 bg-red-600 text-white p-6">
+                  <h2 class="text-2xl font-bold">제품소개</h2>
+                  <p class="mt-2 text-sm">
+                    신선한 농산물을<br />
+                    바로 만나보세요.
+                  </p>
+                </div>
+                <div class="col-span-2 p-6 text-gray-900 flex space-x-8">
+                  <a href="#" class="border-b border-gray-300 pb-1">제품 A</a>
+                  <a href="#" class="border-b border-gray-300 pb-1">제품 B</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- 공지/문의 -->
+          <li class="group">
+            <a href="#" class="header-link">공지/문의</a>
+            <div class="submenu bg-white shadow-xl">
+              <div class="grid grid-cols-3">
+                <div class="col-span-1 bg-red-600 text-white p-6">
+                  <h2 class="text-2xl font-bold">공지/문의</h2>
+                  <p class="mt-2 text-sm">
+                    궁금한 사항을<br />
+                    언제든 문의하세요.
+                  </p>
+                </div>
+                <div class="col-span-2 p-6 text-gray-900 flex space-x-8">
+                  <a href="#" class="border-b border-gray-300 pb-1">FAQ</a>
+                  <a href="#" class="border-b border-gray-300 pb-1">1:1 문의</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- 예약안내 -->
+          <li class="group">
+            <a href="#" class="header-link">예약안내</a>
+            <div class="submenu bg-white shadow-xl">
+              <div class="grid grid-cols-3">
+                <div class="col-span-1 bg-red-600 text-white p-6">
+                  <h2 class="text-2xl font-bold">예약안내</h2>
+                  <p class="mt-2 text-sm">
+                    체험·대관 예약을<br />
+                    편리하게 진행하세요.
+                  </p>
+                </div>
+                <div class="col-span-2 p-6 text-gray-900 flex space-x-8">
+                  <a href="#" class="border-b border-gray-300 pb-1">체험예약</a>
+                  <a href="#" class="border-b border-gray-300 pb-1">대관안내</a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- 모바일 햄버거 -->
+      <button id="menuBtn" class="lg:hidden text-2xl">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- 블러 오버레이 -->
+  <div id="navBlur"></div>
+
+  <!-- 테스트용 메인 영역 -->
+  <main class="pt-16">
+    <section class="h-screen bg-[url('https://dummyimage.com/1920x1080/cccccc')] bg-cover bg-center"></section>
+  </main>
+
+  <button class="arrowBtn">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+
+
+  <style>
+    .arrowBtn{
+
+      /* 버튼 원 모양 */
+      width: 50px;
+      height: 50px;
+      background-color: aliceblue;
+      border-radius: 50%;
+      margin-left: auto;
+
+
+      /* 하단에 고정 */
+      display: flex;
+      position: sticky;
+      bottom: 20px;
+      right: 20px;
+
+      transition: all 200ms ease-in-out;
+    }
+
+    .arrowBtn > i{
+      margin: auto;
+      text-align: center;
+      font-size: 16px;
+      color: #000;
+
+      
+    }
+
+  </style>
+
+
+
+
+  <script>
+    const header = document.getElementById('mainHeader');
+    const navBar = document.getElementById('navBar');
+    const nav = document.getElementById('mainNav');
+    const logoW = document.getElementById('logoWhite');
+    const logoB = document.getElementById('logoBlack');
+
+    function setHeaderActive(active) {
+      if (active) {
+        header.classList.replace('bg-white/0', 'bg-white');
+        header.classList.remove('backdrop-blur-lg');
+        nav.classList.replace('text-white', 'text-black');
+        logoW.classList.add('hidden');
+        logoB.classList.remove('hidden');
+      } else {
+        header.classList.replace('bg-white', 'bg-white/0');
+        header.classList.add('backdrop-blur-lg');
+        nav.classList.replace('text-black', 'text-white');
+        logoW.classList.remove('hidden');
+        logoB.classList.add('hidden');
+      }
+    }
+
+    // 마우스 엔터/리브로 헤더 스타일 토글
+    navBar.addEventListener('mouseenter', () => setHeaderActive(true));
+    navBar.addEventListener('mouseleave', () => setHeaderActive(false));
+    setHeaderActive(false);
+
+    // 블러 오버레이 토글
+    document.querySelectorAll('#navBar .group').forEach(group => {
+      const blur = document.getElementById('navBlur');
+      group.addEventListener('mouseenter', () => blur.classList.add('show'));
+      group.addEventListener('mouseleave', () => blur.classList.remove('show'));
+    });
+
+
+
+    //최상단 이동 버튼
+
+    let arrowBtn = document.querySelector('.arrowBtn');
+
+    document.addEventListener('scroll' ,() =>{
+      if(homeHeight/2 < window.scrollY){
+        arrowBtn.classList.add('visible');
+        arrowBtn.style.opacity = 1;
+      }else{
+        arrowBtn.classList.remove('visible');
+        arrowBtn.style.opacity = 0;
+      }
+    });
+
+    document.addEventListener('click', ()=>{
+      window.scrollTo({
+        top:0,
+        behavior:"smooth"
+      })
+    })
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,260 @@
+#header_wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 57;
+  // -webkit-transition: all .3s ease;
+  // -moz-transition: all .3s ease;
+  // -ms-transition: all .3s ease;
+  // -o-transition: all .3s ease;
+  transition: all 0.3s ease;
+
+  &.sub {
+    #header {
+      border-bottom-color: #ddd;
+    }
+  }
+
+  #header {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    z-index: 6;
+    background: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .header-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+  }
+
+  #logo {
+    position: relative;
+    padding: 0;
+    z-index: 2;
+
+    a {
+      display: block;
+      width: 325px;
+      height: 35px;
+      transition: all 0.3s ease;
+      background: url(./../images/logo.png) 50% / contain no-repeat;
+    }
+  }
+
+  #top_nav {
+    display: flex;
+    height: 100%;
+    align-items: center;
+   
+
+
+    .gnb {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      padding: 0;
+      height: 100%;
+   
+      >li.lm{
+        position: relative;
+      }
+
+      
+
+      > li {
+        position: relative;
+        display: block;
+        width: auto;
+        text-align: center;
+        height: 100%;
+
+        > a {
+          display: flex;
+          align-items: center;
+          padding: 0 31px;
+          font-size: 18px;
+          height: 100%;
+          color: #22282d;
+          font-weight: 500;
+          word-break: keep-all;
+          transition: color 0.3s;
+        }
+      }
+
+      .snb {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        // height: 0;
+        max-height: 0;
+        overflow: hidden;
+        z-index: 2;
+        text-align: center;
+        list-style: none;
+        color: #22282d;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+      
+
+        li {
+          a {
+            display: block;
+            text-align: center;
+            font-weight: 500;
+            padding: 8px 5px;
+            font-size: 16px;
+            color: #666;
+            transition: all 0.3s ease;
+            line-height: 1.5;
+          }
+        }
+
+        &.open .snb{
+           max-height: 300px;
+        }
+      }
+    }
+  }
+
+  .dot_stretching {
+    position: relative;
+    z-index: 10;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #e66da5;
+    transform: scale(1.25, 1.25);
+    margin: -4px auto 0;
+    opacity: 0;
+
+    &::before {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #e66da5;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+    }
+  }
+
+  #hd_right {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .menu_slider_btn {
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+    background: url(./../images/menu.png) 50% / cover no-repeat;
+    transition: 0.3s;
+  }
+}
+
+.snb_bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100px;
+  height: 0;
+  background-color: #fff;
+  z-index: -1;
+  box-shadow: 0px 10px 22px 0 rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.hidden_nav {
+  position: fixed;
+  top: 0;
+  right: -450px;
+  width: 450px;
+  height: 100vh;
+  padding: 80px 50px 0 50px;
+  background: #fbfbfb;
+  z-index: 10000;
+
+  .menu_slider_btn2 {
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+
+    span {
+      display: block;
+      width: 25px;
+      height: 2px;
+      border-radius: 3px;
+      background: #e66da5;
+
+      &:nth-child(1) {
+        margin: 0;
+        transform: rotate(45deg);
+      }
+
+      &:nth-child(2) {
+        display: none;
+        transform: rotate(45deg);
+      }
+
+       &:nth-child(3) {
+        margin-top: -2px;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+
+
+/* 2) 헤더 전체에 .open 클래스가 붙으면 모든 서브메뉴 펼침 */
+#header_wrap.open {
+  .snb {
+    opacity: 1;
+    /* 실제 높이는 JS에서 각 서브메뉴 scrollHeight로 세팅 */
+    color: #22282d;
+  }
+
+  /* 3) 활성화된 1차 메뉴 */
+  .gnb > li > a.active {
+    color: #e66da5;
+    
+  }
+}

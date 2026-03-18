@@ -1,0 +1,97 @@
+.sub_visual {
+  position: relative;
+  margin: 0 auto;
+  height: 100vh;
+  min-height: 900px;
+  max-height: 1080px;
+  padding-top: 100px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sub_visual .page_title {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 95px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.sub_visual .page_title h3 {
+  position: relative;
+  font-size: 70px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1;
+}
+.sub_visual ul.sm_menu {
+  display: flex;
+}
+.sub_visual ul.sm_menu li {
+  position: relative;
+  color: #929292;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.sub_visual ul.sm_menu li:first-child {
+  padding-left: 12px;
+}
+.sub_visual ul.sm_menu li a {
+  color: #e66da5;
+  font-size: 15px;
+}
+.sub_visual.sub1 .bg_wrap {
+  background-image: url(./../images/sub_visual05.jpg);
+}
+.sub_visual .bg_wrap {
+  width: 100%;
+  height: calc(100% - 260px);
+  background: 50%/cover no-repeat;
+  background-attachment: fixed;
+}
+
+#notice-list .sub_inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+#notice-list .list-info {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 20px;
+}
+#notice-list .list-info strong {
+  font-weight: 600;
+}
+#notice-list .notice-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 1px solid #ddd;
+  margin-bottom: 80px;
+}
+#notice-list .notice-table thead th {
+  padding: 15px 0;
+  font-weight: 500;
+  color: #222;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+#notice-list .notice-table tbody tr.no-data td {
+  padding: 60px 0;
+  text-align: center;
+  color: #888;
+  font-size: 16px;
+}
+#notice-list .notice-table tbody tr:not(.no-data) td {
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+  color: #555;
+}/*# sourceMappingURL=notice.css.map */

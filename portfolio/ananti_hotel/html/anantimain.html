@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- css file -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/anantimain.css">
+    <link rel="stylesheet" href="../css/ananti_media.css">
+
+    <!-- script file -->
+    <script src="../js/common.js" defer></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ 
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="crossorigin="anonymous"></script>
+    
+    
+    <title>메인</title>
+    
+    <script>
+      $(function () {
+
+        $("#menu_open").mouseover(function () {
+          $("#navbox").fadeIn();
+        });
+
+        $("#menu_close").click(function () {
+          $("#navbox").fadeOut();
+        });
+
+        $("#submenu_3").mouseover(function () {
+          $(".navbox").css("padding-bottom", "128px")
+        });
+
+        $("#submenu_3").mouseout(function () {
+          $(".navbox").css("padding-bottom", "288px")
+        });
+
+
+      });
+    </script>
+    
+    
+  </head>
+
+<body>
+
+  <!-- 세로 메인메뉴 만들기 -->
+  <div class="navbox" id="navbox">
+
+    <div class="menu_name"> 
+      <ul>
+        <li class="f-18"><a href="anantimain.html">ANANTI HILTON BUSAN</a></li>
+        <li id="menu_close">X</li>
+        <li class="clear"></li>
+      </ul>
+    </div>
+  
+      <ul class="nav">
+        
+        <li class="f-18"><a href="roomsub1.html">Accomodation</a>
+        <!--
+              <ul class="submenu">
+                  <li><a href="#">menu1-1</a></li>
+                  <li><a href="#">menu1-2</a></li>
+                  <li><a href="#">menu1-3</a></li>
+                  <li><a href="#">menu1-4</a></li>
+                </ul>-->
+          </li>
+        <li class="f-18"><a href="facilitysub.html" >Facility</a>
+  
+               <!--
+              <ul class="submenu">
+                  <li><a href="#">menu1-1</a></li>
+                  <li><a href="#">menu1-2</a></li>
+                  <li><a href="#">menu1-3</a></li>
+                  <li><a href="#">menu1-4</a></li>
+                </ul>-->
+          </li>
+          
+        <li id="submenu_3" class="f-18"><a href="travelsub.html">Promotion</a>
+               
+              <ul class="submenu" class="f-18">
+                <li><a href="travelsub.html">Travel</a></li>
+                <li><a href="newssub.html">News</a></li>
+                <!-- <li><a href="eventsub.html">Program</a></li> -->
+  
+                </ul>
+        </li>
+          
+  
+        
+      </ul>
+  </div>
+  
+   <!-- 메인 페이지 제작 헤더-비주얼 -->
+      <header>
+        <div class="main_container">
+  
+            <div class="navi_bg">
+              <ul>
+                  <li id="menu_open">
+                  
+                      <i class="fas fa-bars menu f-14"></i>
+                   
+                  </li>
+                  <li class="f-rix f-14">
+                    <a href="../html/anantimain.html"><img src="../img/common/logo.png" alt=""></a>
+                  </li>
+                  <li>
+                      <span class="f-14">KR <i class="fas fa-caret-down "></i></span>
+                      &nbsp;
+                      &nbsp;
+                      <span class="f-14">Book</span>
+                  </li>
+              </ul>
+            </div>
+  
+        <!-- visual 배경 -->
+            <div class="visual_bg">
+  
+              <div class="visualtext f-score">
+                  <b class="f-24 f-gmarket"> ANANTI HILTON BUSAN </b> <br>
+                  <br>
+                 <p class="f-16"> 도심속에서 만나는 휴식처 <br>
+                  <br>
+                  부산의 오염되지 않은 천혜의 바다와 자연경관을 그대로 간직한<br>
+                  아난티 힐튼 부산에서 프라이빗한 휴식을 선사합니다.</p>
+              </div>
+  
+            </div>
+            
+          </div>
+      </header>
+
+<!-- 섹션 시작 -->
+
+
+
+<!-- accomodaiton 섹션1  start -->
+    
+    <section class="sec01 ">
+      <div class="sub_title1" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000">
+        ACCOMODATION
+      </div>
+
+    <!-- sec01 contents -->
+      <div class="sec01_content">
+
+        <div class="sec01_imgbox" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="2000" data-aos-delay="5">
+          <img src="../img/main/section01_content.png" alt="">
+        </div>  
+
+        <div class="sec01_article" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="1000" data-aos-delay="2">
+          <p class="f-20">OCEAN SWEET ROOM</p>
+          <p class="f-18">"프라이빗한 이용과 격식있는 비즈니스"</p>
+          <p class="f-16">
+            약 120㎡의 넓은 공간을 자랑하는 스위트룸은
+            안락한 거실과 별도의 문으로 나뉘어진 침대로 구성되어있습니다. 
+            공간의 여유로운 분리는 편안하면서도 프라이빗한 이용과 
+            격식있는 비즈니스를 위해 편안한 시설을 제공합니다. 
+            이그제큐티브 라운지 사용이 포함되어 조식 및 간식, 애프터 눈 티,
+            이브닝 칵테일을 즐길 수 있으며, 호텔 사우나를 무료로 이용할 수 있습니다.
+            아난티 힐튼 부산의 스위트룸은 보다 특별한 서비스로 이용객의 품격을 높입니다.
+          </p>
+
+        <!--화살표 아이콘-->
+          <p>
+            <a href="roomsub1.html" style="text-decoration:none;">
+              <i class="far fa-arrow-alt-circle-right f-24"></i>
+            </a>
+          </p> 
+
+        </div>
+
+        
+      </div>
+
+    </section>
+    
+
+<!-- accomodaiton 섹션1  end-->
+    
+
+
+
+
+
+
+ 
+<!-- section02 facility start -->
+
+    <section class="sec02">
+
+            <div class="sub_title1">
+            Facility
+            </div>
+    
+            <!-- sec02 contents -->
+
+            <div class="sec02_content">
+                <ul>
+                        <li>
+                            <img src="../img/main/sec02-1.jpg" alt="">
+                            <p class="f-14">캐비네 드 쁘아송</p>
+
+                            <div class="line1"></div>  <!-- 슬라이드 라인-->
+                        </li>
+
+                        <li>
+                            <img src="../img/main/sec02-2.jpg" alt="">
+                            <p class="f-14">오션 인피니티 수영장</p>
+                            <div class="line2"></div>
+                        </li>
+
+                        <li>
+                            <img src="../img/main/sec02-3.jpg" alt="">
+                            <p class="f-14">워터하우스</p>
+                            <div class="line2"></div>
+                        </li>
+
+                        <li>
+                          <img src="../img/main/sec02-5.jpg" alt="">
+                          <p class="f-14">연회장</p> 
+                          
+                          <div class="line2"></div>
+                        </li> 
+                         
+                        <div style="clear:both;"></div>
+                </ul>
+
+            </div>
+
+              <!-- button -->
+            <div class="btnbox1">
+              <a href="facilitysub.html">
+                <button class="btn1">More</button>
+              </a>
+             </div>
+
+            
+  
+
+    </section>
+
+
+     
+<!-- section03 promotion start-->
+
+  <section class="sec03">
+
+    <div class="sec03_container">
+
+      <div class="sec03_bg"> <!--배경이미지 덮는 투명박스-->
+
+          <div class="sec03_text" data-aos="fade-up" data-aos-duration="2000">
+              <b class="f-24"> PROMOTION</b> <br>
+              <br>
+              <p class="f-18">"우리의 여행이 더욱 특별해집니다."</p> <br>
+              <br>
+             <p class="f-16"> 
+                매번 같은 여행을 새롭게 기억할 수 있도록<br>
+                우리의 여행이 더욱 특별해질 수 있도록 <br> 요일별로 준비한 다양한 프로그램을 선보입니다<br>
+                아난티 힐튼을 비롯해 아난티 코브에서 투숙하는 <br>여행자라면 누구나 참여할 수 있습니다.<br>
+              </p>  
+              <br>
+              <!-- <i class="far fa-arrow-alt-circle-right f-18 sec03_icon"></i> -->
+
+          </div>
+
+          <div class="sec03_content">
+
+<!--첫번째 투명박스  -->
+
+            <div class="sec03_box1" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+              <h3 class="program-title f-16">ANANTI KIDS</h3> <br>
+              <br><br><br>
+             <p id="kidsprogram f-16"> KIDS <br>
+              PROGRAM<br></p>
+
+              <div class="sec03_inside"  >
+                <a href="../html/newssub.html"> 8월 키즈 <br>프로그램</a>
+              </div>
+
+            </div>
+
+<!-- 두번째 투명박스 -->
+            <div class="sec03_box1" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+              <h3 class ="f-16">ANANTI HEALTH </h3><br><br><br>
+              <br>
+              <p id="health">HEALTH & <br> LIFE</p>
+            
+              <div class="sec03_inside">
+                <a href="../html/newssub.html"> 8월 건강<br> 프로그램</a>
+              </div>
+            </div>
+
+<!-- 세번째 투명박스 -->
+            <div class="sec03_box1" data-aos="fade-up" data-aos-offset="200" data-aos-easing="ease-out-cubic"  data-aos-duration="3000">
+             <h3 class="f-16"> ANANTI ENJOY</h3><br><br><br>
+              <br>
+             <p id="booktalk"> Book <br>Talk</p>
+            
+              <div class="sec03_inside">
+                <a href="../html/newssub.html">북토크<br> 프로그램</a>
+              </div>
+            
+            </div>
+            
+            </div>
+            
+            </div>
+
+    </div>
+
+
+  </section>
+
+<!-- section03 promotion end-->
+
+
+
+
+
+<!-- section04 dining start -->
+  <section class="sec04">
+
+    <!-- 큰 콘텐츠 박스 -->
+      
+      <div class="sec04_content">
+
+        <div class="sec04_titlebox">
+
+          <b class="f-24"> Dining</b>
+        </div>
+
+
+        <div class="sec04_parent">
+
+            <img src="../img/main/sec04-1.jpg" alt="">
+
+
+        <!-- 작은 콘텐츠 박스  -->
+          <div class="sec04_contentbox">
+            <div class="sec04_contentbox_titlebox">
+              <p class="f-18">"오픈 키친 올데이 다이닝 레스토랑"<br></p>
+              <br>
+             <p class="f-16"> 다모임은 라이브 쿠킹 스테이션을 갖춘 오픈 키친 컨셉의 뷔페 레스토랑입니다.<br>
+              건강하고 신선한 먹거리를 기반으로 다양한 해산물과 참숯 로티세리 그릴 , BBQ, 제철 요리를 선보입니다. <br>
+              두 개의 웨스턴 섹션과 아시아 섹션 등에서 한식, 양식, 중식 ,일식
+              등 세계 각국의 풍미와 한국의 식재료, 요리법이 조화를 이루어
+              새롭고도 친근한 메뉴를 선보입니다.</p>
+            </div>
+ 
+          
+              <img src="../img/main/sec04-2.jpg" alt="">
+              <img src="../img/main/sec04-3.jpg" alt="">
+              <img src="../img/main/sec04-4.jpg" alt="">
+              <img src="../img/main/sec04-7.jpg" alt="">
+             
+          </div>
+
+        </div>
+
+
+      </div>
+    
+  </section>
+
+<!-- section04 dining end -->
+
+
+
+<!-- section05 Gallery start -->
+
+<section class="sec05">
+
+  <div class="sec05_titlebox">
+
+    <b class="f-24">Gallery</b>
+  </div> 
+
+  <div class="sec05_imgbox">
+
+
+      <div class="sec05_imgbox1">
+
+          <ul>
+          <li></li>
+          <li></li>
+          <li class="clear"></li>
+          <li></li>
+          <li class="clear"></li>
+          </ul>
+      
+      </div>
+
+      <div class="sec05_imgbox2"></div>
+
+      <div class="sec05_imgbox3">
+
+          <ul>
+          <li></li>
+          <li class="clear"></li>
+          <li></li>
+          <li></li>
+          <li class="clear"></li>
+          </ul>
+      
+      </div>
+
+
+      
+
+
+  </div>
+
+
+</section>
+
+<div class="line2"></div>
+
+
+
+<!-- footer -->
+
+<section class="sec06">
+
+  
+  <div class="sec06_imgbox">
+    <div class="sec06_box1">
+      <p class="f-24">ANANTI HILTON BUSAN</p>
+      <p class="f-12">
+        268-32, Gijanghaean-ro, Gijang-eup, Gijang-gun, Busan, Korea 46083<br>
+        T. 대표번호 +82 (0)51-509-1111 | 객실 예약 +82 (0)51-509-1114<br>
+        F. (0)51-509-2620 E. pushi_hotel@hilton.com 사업자등록번호 : 483-85-00667<br>
+        대표이사 : 이만규<br>
+        Copyright © 2017 All rights reserved ANANTI HILTON BUSAN
+      </p>
+    </div>
+
+    <div class="sec06_box2">
+      <p class="f-18">MENU</p>
+      <p>
+        <a href="roomsub1.html">ACCOMODATION</a><br>
+        <a href="facilitysub.html">Facility</a><br>
+        <a href="travelsub.html">Promotion</a><br>
+        <!-- <a href="diningsub.html">Dining</a><br>
+        <a href="positionsub.html">Position</a> -->
+      </p>
+    </div>
+
+    <div class="sec06_box3">
+      <p class="f-18">Follow Us</p>
+      <p>
+        <a href="https://ko-kr.facebook.com/theananti/" target="_blank"><i class="fab fa-facebook-square f-24"></i></a>
+        <a href="https://www.instagram.com/ananti_life/" target="_blank"><i class="fab fa-instagram f-24"></i></a>
+      </p>
+    </div>
+
+    <div class="sec06_box4">
+      <p class="f-18">Subscribe Now</p>
+      <p>
+        <input type="email" value="" placeholder="Your E-mail">
+       
+      </p>
+    </div>
+
+  </div>
+
+
+</section>
+
+  
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+
+</html>

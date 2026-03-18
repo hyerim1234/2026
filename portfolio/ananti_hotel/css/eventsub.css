@@ -1,0 +1,91 @@
+.main_container{background-image: url(../img/position/position_visual.jpg);}
+
+/* Accomodation section1 start */
+
+.sec01{width: 100%; color: #83663F; /* background-color: rgb(255, 243, 227); */}
+
+.sec01>div:nth-child(1){text-align: center; padding: 80px 0;}
+
+.sec01_content{ width: 1200px; margin: 0 auto; display: flex;}
+
+
+
+/* section 02 facility start */
+
+
+
+.sec02{ width: 100%; color: #83663F; background-color: rgb(255, 243, 227);}
+  
+.sec02>div:nth-child(1){text-align: center; padding: 80px 0;}
+  
+  
+.sec02_content{
+    width: 1200px;
+    margin: 0 auto; padding: 0;
+    text-align: center;
+}
+
+
+
+
+
+
+/* section 03 - promotion start */
+
+.sec03{
+    width: 100%;
+    color: #83663F;
+    background-color: rgb(255, 243, 227);
+
+}
+  
+.sec03>div:nth-child(1){ text-align: center; padding: 80px 0;}
+  
+  
+.sec03_content{
+    width: 1200px;
+    margin: 0 auto; padding: 0;
+    text-align: center;
+}
+
+
+
+/* sec04 Dining section  start */
+.sec04{
+    width: 100%;
+    color: #83663F;
+    background-color: rgb(255, 243, 227);
+
+}
+  
+.sec04>div:nth-child(1){ text-align: center; padding: 80px 0;}
+  
+  
+.sec04_content{
+    width: 1200px;
+    margin: 0 auto; padding: 0;
+    text-align: center;
+}
+
+
+.sec05{
+    width: 100%;
+    background-color: rgb(255, 243, 227);
+    color: #83663F;
+
+}
+  
+.sec05>div:nth-child(1){
+    text-align: center;
+    padding: 80px 0;
+}
+  
+  
+.sec05_content{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+
+}
+

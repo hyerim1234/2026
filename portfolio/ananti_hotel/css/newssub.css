@@ -1,0 +1,303 @@
+
+.main_container{
+    background-image: url(../img/dining/dining_visual.jpg);
+
+}
+
+/* Accomodation section1 start */
+
+.sec01{
+    width: 100%;
+    /* background-color: rgb(255, 243, 227); */
+    color: #83663F;
+
+}
+
+.sec01>div:nth-child(1){
+    text-align: center;
+    padding: 80px 0;
+}
+
+
+.sec01_content{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.sec01_box{
+    width: 700px;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    margin-left: -350px;
+    bottom: -15%;
+    border: #ccc solid 1px;
+    box-shadow: #ccc 5px 5px 30px;
+    padding: 20px 0 30px 0;
+}
+
+.sec01_box>hr{
+    width:80%;
+    margin:0 auto;
+}
+
+.sec01_icon{
+   margin-left: 50%;
+}
+
+
+.sec01_title{
+    text-align: left;
+    margin: 15px auto;
+    margin-left: 200px;
+}
+.sec01_article{
+    /* margin: 15px auto; */
+    line-height: 50px;
+    text-align: left;
+    margin-left: 200px;
+    color: #83663F;
+    position: relative;
+}
+
+.sec01_hovtitle{
+    position: relative;
+}
+
+.sec01_hovtitle::before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #83663F;
+    position: absolute;
+    top: 120%;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.sec01_hovtitle:hover{
+    color: #614827;
+    transition: 1s;
+}
+
+.sec01_hovtitle:hover::before{
+    transform: scaleX(1);
+    transition: 1s;
+}
+
+
+
+
+/* section 02  start */
+
+/* 뉴스 윈도우 시작  */
+.news_window{
+    position: absolute;
+    width: 1000px;
+    height: 800px;
+    border: 10px solid black;
+    left: 50%;
+    margin-left: -500px;
+    top: 50%;
+    margin-top: -400px;
+    background-color: white;
+    overflow: scroll;
+    overflow-x: hidden;
+    display: none;
+}
+
+.news_window img{
+    width: 100%;
+    height: 100%;
+    margin: 50px auto;
+}
+
+
+.news_window1{
+    position: absolute;
+    width: 1000px;
+    height: 800px;
+    border: 10px solid black;
+    left: 50%;
+    margin-left: -500px;
+    top: 50%;
+    margin-top: -400px;
+    background-color: white;
+    overflow: scroll;
+    overflow-x: hidden;
+    display: none;
+}
+
+.news_window1 img{
+    width: 100%;
+    height: 100%;
+    margin: 50px auto;
+}
+.news_window2{
+    position: absolute;
+    width: 1000px;
+    height: 800px;
+    border: 10px solid black;
+    left: 50%;
+    margin-left: -500px;
+    top: 50%;
+    margin-top: -400px;
+    background-color: white;
+    overflow: scroll;
+    overflow-x: hidden;
+    display: none;
+}
+
+.news_window2 img{
+    width: 100%;
+    height: 100%;
+    margin: 50px auto;
+}
+
+.viewclose{
+    float: right;
+    margin: 10px auto;
+}
+/* 뉴스 윈도우 끝 */
+
+
+
+
+
+
+
+.sec02{
+    width: 100%;
+    color: #83663F;
+    margin: 100px auto 0 auto;
+    position: relative;
+
+}
+
+/* 섹션2 제목 */
+.sec02_topcontent{
+    width: 1200px;
+    margin: 150px auto 30px auto;
+    display: flex;
+
+}
+
+.sec02_topcontent .sec02_title{
+    width:250px;
+}
+
+.sec02line{
+    width: 950px;
+    height: 2px;
+    margin-top: 24px;
+    background-color: #ccc;
+    box-sizing: border-box;
+}
+
+
+/* 섹션2  */
+.sec02_content{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    display: flex;
+
+}
+
+
+
+.sec02_content>div:nth-child(1){
+    width: 600px;
+    padding:50px 30px 50px 0;
+    box-sizing: border-box;
+    text-align: left;
+}
+.sec02_content>div:nth-child(1) img{
+    width: 100%;
+    border-radius: 5px;
+}
+.sec02_bt{
+    padding: 20px 0;
+}
+
+
+.sec02_content>div:nth-child(2){
+    width: 600px;
+    padding:50px 0px 50px 30px;
+    box-sizing: border-box;
+    text-align: right;
+}
+.sec02_1 img{
+    width: 200px;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+.sec02_1 td{
+    vertical-align: top;
+}
+
+
+
+/* section 03 - promotion start */
+
+.sec03{
+    width: 100%;
+    color: #83663F;
+    margin-bottom: 80px;
+
+}
+  
+/* 섹션2 제목 */
+.sec03_topcontent{
+    width: 1200px;
+    margin: 150px auto 30px auto;
+    display: flex;
+
+}
+
+.sec03_topcontent .sec03_title{
+    width:250px;
+    text-align: right;
+}
+
+.sec03line{
+    width: 950px;
+    height: 2px;
+    margin-top: 24px;
+    background-color: #ccc;
+    box-sizing: border-box;
+}
+
+/* 섹션3  */
+.sec03_content{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    position: relative;
+}
+
+.sec03_content>ul>li{
+    width: 400px;
+    height: 600px;
+    float: left;
+    list-style: none;
+    padding: 0 40px;
+    box-sizing: border-box;
+
+}
+
+.sec03_content p{
+    margin-top:30px;
+}
+.sec03_content img{
+    border-radius: 5px;
+}
+
+/* .sec03_article{
+    text-align: left;
+    
+} */
+

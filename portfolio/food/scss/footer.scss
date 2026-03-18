@@ -1,0 +1,89 @@
+footer {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 22px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  .footer_con {
+    width: 100%;
+    max-width: 1400px;
+    padding: 55px 50px 50px;
+    margin: 0 auto;
+    text-align: center;
+
+    .foot_menu {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      
+
+      li {
+        text-align: center !important;
+        // 구분자
+        &::after {
+          content: "";
+          display: inline-block;
+          width: 1px;
+          height: 10px;
+          background-color: #474553;
+          opacity: 0.3;
+          margin: 0 20px;
+        }
+
+        a {
+          font-size: 16px;
+          font-weight: 500;
+          transition: color 0.3s;
+          color: inherit;
+          text-decoration: none;
+
+          &:hover {
+            color: #e66da5;
+          }
+        }
+
+        // 마지막 li에는 구분자 없애기
+        &:last-child::after {
+          display: none;
+        }
+      }
+    }
+
+    .btm {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      border-top: 1px solid #ddd;
+      padding-top: 30px;
+      margin-top: 35px;
+
+      // 모바일용 숨김
+      &.mob {
+        display: none;
+      }
+
+      .ft_copy {
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.8);
+        word-break: keep-all;
+        line-height: 24px;
+        margin: 0;
+      }
+
+      span {
+        display: block;
+        margin-top: 15px;
+        font-family: "Noto Sans KR", sans-serif;
+        font-size: 13px;
+        font-weight: 300;
+        color: rgba(0, 0, 0, 0.4);
+        line-height: 24px;
+      }
+    }
+  }
+}

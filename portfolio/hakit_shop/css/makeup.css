@@ -1,0 +1,136 @@
+#wrap{ background-image: url(../img/slide_bg.jpg);}
+
+.sec01,.sec02,.sec03{
+    width: 1200px; height: 500px;
+    /* background-color: #fae7c8; */
+    margin: 50px auto;
+    padding: 60px; box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+
+    
+}
+.sec01>ul,.sec02>ul,.sec03>ul{
+ display: flex; justify-content: space-between; align-items: center;
+}
+
+
+
+
+
+.sec01>ul>li:nth-child(1){
+    width: 300px; height: 300px;
+    background-image: url(../img/19fef41be3106ee9b85b84949ff101b3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec01>ul>li:nth-child(2){
+    width: 300px; height: 300px;
+    background-image: url(../img/62a1a6225d59f7300209.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec01>ul>li:nth-child(3){
+    width: 300px; height: 300px;
+    background-image: url(../img/4-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+.sec02>ul>li:nth-child(1){
+    width: 300px; height: 300px;
+    background-image: url(../img/makeup1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec02>ul>li:nth-child(2){
+    width: 300px; height: 300px;
+    background-image: url(../img/88315cf7124131f983d728aa867e79c2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec02>ul>li:nth-child(3){
+    width: 300px; height: 300px;
+    background-image: url(../img/sec003.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.sec03>ul>li:nth-child(1){
+    width: 300px; height: 300px;
+    background-image: url(../img/makeup2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec03>ul>li:nth-child(2){
+    width: 300px; height: 300px;
+    background-image: url(../img/makeup3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sec03>ul>li:nth-child(3){
+    width: 300px; height: 300px;
+    background-image: url(../img/makeup4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn1 {
+    width: 180px;
+    border-radius: 50px;
+    border: rgba(143, 97, 36, 0.3) solid 1px;
+    padding: 10px 0;
+    background-color: white;
+    color: #83663F;
+    cursor: pointer;
+    position: absolute;
+   transform: translate(-50% -50%);
+} 
+
+.sec01>ul>li>a>p{
+    width: 100px; height: 50px;
+    line-height: 50px;
+    background-color: rgb(230, 255, 255);
+    position: absolute;
+    top: 330px;  transform: translateY(50%);
+}
+.sec02>ul>li>a>p{
+    width: 100px; height: 50px;
+    line-height: 50px;
+    background-color: rgb(230, 255, 255);
+    position: absolute;
+    top: 330px;  transform: translateY(50%);
+}
+.sec03>ul>li>a>p{
+    width: 100px; height: 50px;
+    line-height: 50px;
+    background-color: rgb(230, 255, 255);
+    position: absolute;
+    top: 330px;  transform: translateY(50%);
+}
+.sec01>ul>li>a>p:hover{
+    color: #ff87a1;
+    font-weight: bold;
+}
+.sec02>ul>li>a>p:hover{
+    color: #ff87a1;
+    font-weight: bold;
+}
+.sec03>ul>li>a>p:hover{
+    color: #ff87a1;
+    font-weight: bold;
+}

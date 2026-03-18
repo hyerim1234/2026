@@ -1,0 +1,202 @@
+/* * { margin: 0;  padding: 0;}
+li {list-style: none;}
+a { text-decoration: none;} */
+
+@font-face {
+    font-family: 'RixInooAriDuriR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/RixInooAriDuriR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+
+
+/* *{font-family: 'S-CoreDream-3Light';font-size:16px;} */
+
+/* font-size: 14px; */
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+.f-noto { font-family: 'Noto Sans KR', sans-serif;}
+
+.f-lato { font-family: 'Lato';}
+
+.f-rix {font-family: 'RixInooAriDuriR';}
+.f-gmarket {font-family: 'GmarketSansMedium';}
+.f-score{ font-family: 'S-CoreDream-3Light';}
+
+.f-60{font-size: 60px;}
+.f-50{font-size: 50px;}
+.f-48{font-size:48px;} /*대제목*/
+.f-36{font-size: 36px;}
+.f-24{font-size: 24px;}
+.f-20{font-size: 20px;}
+.f-18{font-size: 18px;}
+.f-16{font-size: 16px;}
+.f-14{font-size: 14px;}
+.f-12{font-size: 12px;}
+.f-10{font-size: 10px;}
+
+
+
+
+* { margin: 0; padding: 0;  font-family: 'Noto Sans KR', sans-serif;}
+li {list-style: none;}
+a {text-decoration: none; color: #424242;  text-align: center; }
+
+
+
+
+body {
+    overflow-x: hidden;
+    /* background-color: #fff0eb; */
+    
+    /* overflow: scroll; */
+    
+}
+
+#wrap {
+    width: 100%; height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+header {
+    height: 50px;
+    background-color: #f2ecdcfa;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 200;
+
+    /* color: #a17a69; */
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    color: #888787;
+    font-size: 18px;
+    /* font-weight: bold; */
+    
+    /* background-color: rgb(132, 132, 241); */
+    /* display: flex; justify-content: space-around; align-items: center; */
+}
+
+nav>ul {
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 50px;
+    text-align: center;
+    /* float: left; */
+    /* margin-right: 40px; */
+}
+
+
+/* 호버했을때 글자위에 색상효과 */
+.submenu>li>a:hover {
+    background-color:#f3dadf;
+    border-radius: 10%;
+}
+
+#logo{  padding: 5px 0px 20px 0px; box-sizing: border-box;}
+
+
+.visualtext {
+    /* color: #a17a69; */
+    text-align: right;
+    /* padding-top: 100px; */
+    /* padding-left: 0px;
+    box-sizing: border-box; */
+}
+
+/* header style end */
+
+
+
+
+
+/* footer style */
+footer {
+    width: 100%; height: 280px;
+    margin: 50px auto 0px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #e7dfdc;
+    /* background-image: url(../img/footerbg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* background-color: pink; */
+}
+
+footer>ul {
+    width: 400px; height: auto;
+    line-height: 30px;
+    width: fit-content;
+    text-align: center;
+    /* background-color: palegreen; */
+}
+
+
+/* #logo {
+    margin-bottom: 10px;
+} */
+
+/* .copyright {
+    margin-top: 10px;
+} */
+
+.menuline {
+    width: 2px;
+    height: 150px;
+    background-color: rgba(214, 214, 214, 0.945);
+}
+
+.btn1 {
+    width: 180px;
+    border-radius: 50px;
+    border: rgba(143, 97, 36, 0.3) solid 1px;
+    padding: 10px 0;
+    margin: 50px;
+    background-color: white;
+    color: #83663F;
+    cursor: pointer;
+}
+
+.btn1:hover {
+    background-color: #ffa939;
+    color: white;
+}
+
+
+.fa-star{color: #ffa939;}

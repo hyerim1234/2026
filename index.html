@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kang Hyerim Portfolio Hero</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true">
+      <div class="scroll-progress__bar" data-scroll-progress></div>
+    </div>
+
+    <header class="site-header" aria-label="주요 탐색">
+      <div class="site-header__frame" data-site-header>
+        <button
+          class="brand brand--button"
+          type="button"
+          data-scroll-target="#top"
+          aria-label="강혜림 홈으로 이동"
+        >
+          <span class="brand__mark" aria-hidden="true">강혜</span>
+          <span class="brand__name">강혜림</span>
+        </button>
+
+        <nav class="site-nav" aria-label="데스크톱 탐색">
+          <button class="site-nav__link" type="button" data-scroll-target="#work">작업</button>
+          <button class="site-nav__link" type="button" data-scroll-target="#about">소개</button>
+          <button class="site-nav__link" type="button" data-scroll-target="#skills">스킬</button>
+          <a class="site-nav__link" href="mailto:hello@example.com">연락</a>
+        </nav>
+
+        <div class="site-header__actions">
+          <div class="availability-badge" aria-label="현재 작업 상태">
+            <span class="availability-badge__dot" aria-hidden="true"></span>
+            <span>작업 중</span>
+          </div>
+          <a class="button button--header" href="mailto:hello@example.com">
+            연락하기
+          </a>
+        </div>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="메뉴 열기"
+          data-menu-toggle
+        >
+          <svg class="menu-toggle__icon menu-toggle__icon--menu" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 7H20M4 12H20M4 17H20" />
+          </svg>
+          <svg class="menu-toggle__icon menu-toggle__icon--close" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 6L18 18M18 6L6 18" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu" data-mobile-menu aria-hidden="true">
+      <div class="mobile-menu__panel">
+        <nav class="mobile-menu__nav" aria-label="모바일 탐색">
+          <button class="mobile-menu__link" type="button" data-scroll-target="#work">작업</button>
+          <button class="mobile-menu__link" type="button" data-scroll-target="#about">소개</button>
+          <button class="mobile-menu__link" type="button" data-scroll-target="#skills">스킬</button>
+          <a class="mobile-menu__link" href="mailto:hello@example.com">연락</a>
+        </nav>
+        <a class="mobile-menu__cta" href="mailto:hello@example.com">
+          연락하기 →
+        </a>
+      </div>
+    </div>
+
+    <main class="page-shell">
+      <section class="hero" id="top">
+        <div class="hero__topbar">
+          <div class="status-pill" aria-label="현재 작업 상태">
+            <span class="status-pill__dot" aria-hidden="true"></span>
+            <span>프로젝트 작업 중</span>
+          </div>
+          <p class="hero__location">서울, 대한민국 기반</p>
+        </div>
+
+        <div class="hero__content">
+          <div class="hero__copy">
+            <p class="hero__eyebrow">UI/UX 디자이너 · 프로덕트 전략가</p>
+            <h1 class="hero__title">강혜림</h1>
+            <p class="hero__subtitle">
+              <span>Kang Hyerim</span><span class="hero__subtitle-dot">.</span>
+            </p>
+            <div class="hero__bottom-row">
+              <p class="hero__description">
+                복잡한 문제를 인간 중심의 우아한 디지털 제품으로 만들어냅니다
+                <span class="hero__dash">-</span>
+                리서치부터 픽셀 완성까지.
+              </p>
+
+              <div class="hero__actions">
+                <a class="button button--primary" href="#work">
+                  작업 보기
+                  <span aria-hidden="true">→</span>
+                </a>
+                <a class="button button--secondary" href="mailto:hello@example.com">
+                  연락하기
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <aside class="hero__aside" aria-label="프로필 및 지표">
+            <article class="portrait-card">
+              <img
+                src="https://placehold.co/512x576/E7DDD0/8D7B69?text=Kang+Hyerim"
+                alt="강혜림 프로필"
+              />
+              <div class="portrait-card__overlay"></div>
+              <div class="floating-note">
+                <p class="floating-note__label">현재 작업 중</p>
+                <p class="floating-note__title">FinanceFlow v3.0</p>
+              </div>
+            </article>
+
+            <div class="stats-grid stats-grid--stacked">
+              <article class="stat-card">
+                <strong>2년 6개월</strong>
+                <span>에너지 IT 솔루션 기업</span>
+                <small class="stat-card__meta">Vue3 · Nuxt.js · Laravel</small>
+              </article>
+              <a class="stat-card stat-card--download" href="./pdf/resume.pdf" download="resume.pdf">
+                <strong>이력서</strong>
+                <span>다운로드</span>
+                <small class="stat-card__meta">PDF Resume</small>
+              </a>
+            </div>
+          </aside>
+        </div>
+
+      </section>
+
+      <section class="skills-marquee" id="skill-marquee" aria-label="핵심 스킬">
+        <div class="skills-marquee__viewport">
+          <div class="skills-marquee__track">
+            <div class="skills-marquee__group">
+              <span class="skills-marquee__item">UX 리서치</span>
+              <span class="skills-marquee__item">디자인 시스템</span>
+              <span class="skills-marquee__item">인터랙션 디자인</span>
+              <span class="skills-marquee__item">데이터 시각화</span>
+              <span class="skills-marquee__item">프로토타이핑</span>
+              <span class="skills-marquee__item">사용자 테스트</span>
+              <span class="skills-marquee__item">정보 구조설계</span>
+              <span class="skills-marquee__item">프론트엔드 개발</span>
+              <span class="skills-marquee__item">A/B 테스트</span>
+              <span class="skills-marquee__item">서비스 디자인</span>
+              <span class="skills-marquee__item">모션 디자인</span>
+              <span class="skills-marquee__item">접근성 설계</span>
+            </div>
+            <div class="skills-marquee__group" aria-hidden="true">
+              <span class="skills-marquee__item">UX 리서치</span>
+              <span class="skills-marquee__item">디자인 시스템</span>
+              <span class="skills-marquee__item">인터랙션 디자인</span>
+              <span class="skills-marquee__item">데이터 시각화</span>
+              <span class="skills-marquee__item">프로토타이핑</span>
+              <span class="skills-marquee__item">사용자 테스트</span>
+              <span class="skills-marquee__item">정보 구조설계</span>
+              <span class="skills-marquee__item">프론트엔드 개발</span>
+              <span class="skills-marquee__item">A/B 테스트</span>
+              <span class="skills-marquee__item">서비스 디자인</span>
+              <span class="skills-marquee__item">모션 디자인</span>
+              <span class="skills-marquee__item">접근성 설계</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section" id="about" aria-labelledby="about-title">
+        <div class="about-section__inner">
+          <header class="section-heading">
+            <p class="section-heading__eyebrow">01 — 소개</p>
+            <h2 class="section-heading__title" id="about-title">저는 이런 사람입니다</h2>
+          </header>
+
+          <div class="about-layout">
+            <article class="about-card about-card--dark">
+              <div class="about-card__content">
+                <div class="availability-pill availability-pill--dark">
+                  <span class="availability-pill__dot" aria-hidden="true"></span>
+                  <span>프로젝트 작업 중</span>
+                </div>
+
+                <h3 class="about-card__title">디자인은 인간의 얼굴을 한 문제 해결입니다.</h3>
+                <p class="about-card__body">
+                  저는 강혜림입니다 - 사용자 심리, 데이터 인사이트, 프론트엔드
+                  엔지니어링이 교차하는 지점에서 활동하는 UI/UX 디자이너입니다.
+                  복잡한 시스템을 실제 사람들에게 자연스럽게 느껴지도록 만드는
+                  일을 합니다.
+                </p>
+              </div>
+
+              <div class="about-meta">
+                <div class="about-meta__item">
+                  <span class="about-meta__label">위치</span>
+                  <strong class="about-meta__value">서울, 대한민국</strong>
+                </div>
+                <div class="about-meta__item">
+                  <span class="about-meta__label">경력</span>
+                  <strong class="about-meta__value">6년 이상</strong>
+                </div>
+                <div class="about-meta__item">
+                  <span class="about-meta__label">전문 분야</span>
+                  <strong class="about-meta__value">프로덕트 디자인</strong>
+                </div>
+              </div>
+            </article>
+
+            <div class="about-visuals">
+              <div class="metric-panel metric-panel--single">
+                <article class="metric-card metric-card--accent">
+                  <div class="metric-card__content">
+                    <strong>2년 6개월</strong>
+                    <span>실무 경력</span>
+                  </div>
+                </article>
+              </div>
+
+              <article class="featured-project">
+                <img
+                  src="./portfolio/hakit_shop/img/visual_Bg.jpg"
+                  alt="HAKIT Shop 대표 작업"
+                />
+                <div class="featured-project__overlay"></div>
+                <div class="featured-project__tag">대표 작업 — Portfolio</div>
+
+                <div class="featured-project__footer">
+                  <div class="featured-project__copy">
+                    <span>선택 프로젝트</span>
+                    <strong>HAKIT Shop 뷰티 브랜드 스토어 리뉴얼</strong>
+                  </div>
+                  <a class="featured-project__button" href="./portfolio/hakit_shop/html/main.html" aria-label="HAKIT Shop 프로젝트 페이지로 이동">
+                    ↗
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <blockquote class="philosophy-banner">
+            <p>
+              "훌륭한 디자인은 단순한 미학이 아닙니다 - 그것은
+              <em>사용자가 생각하고, 느끼고, 행동하는 방식</em>
+              을 조율하는 보이지 않는 구조입니다."
+            </p>
+            <cite>디자인 철학</cite>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="case-studies" id="work" aria-labelledby="case-studies-title">
+        <div class="case-studies__inner">
+          <div class="section-heading section-heading--split">
+            <div>
+              <p class="section-heading__eyebrow">02 — 선택된 작업</p>
+              <h2 class="section-heading__title" id="case-studies-title">케이스 스터디</h2>
+            </div>
+
+            <div class="case-tabs" role="tablist" aria-label="케이스 스터디 필터">
+              <button class="case-tabs__button is-active" type="button" role="tab" aria-selected="true" data-filter="all">
+                전체
+              </button>
+              <button class="case-tabs__button" type="button" role="tab" aria-selected="false" data-filter="responsive">
+                반응형
+              </button>
+              <button class="case-tabs__button" type="button" role="tab" aria-selected="false" data-filter="branding">
+                브랜딩
+              </button>
+              <button class="case-tabs__button" type="button" role="tab" aria-selected="false" data-filter="content">
+                콘텐츠
+              </button>
+            </div>
+          </div>
+
+          <article class="case-feature" data-case-feature tabindex="0" role="link" aria-label="대표 케이스 스터디 페이지로 이동">
+            <div class="case-feature__media">
+              <img
+                data-feature-image
+                src="./portfolio/hakit_shop/img/visual_Bg.jpg"
+                alt="HAKIT Shop 대표 화면"
+              />
+              <div class="case-feature__media-overlay"></div>
+              <div class="case-feature__badge" data-feature-badge>★ 주요 작업</div>
+              <div class="case-feature__metric">
+                <span data-feature-metric-label>구현 페이지</span>
+                <strong
+                  class="count-up-value"
+                  data-count-up
+                  data-feature-metric-value
+                  data-count-to="24"
+                  data-count-suffix="+"
+                >
+                  24+
+                </strong>
+              </div>
+            </div>
+
+            <div class="case-feature__body">
+              <div class="case-feature__header">
+                <strong class="case-feature__index" data-feature-index>01</strong>
+                <span class="case-feature__meta" data-feature-meta>뷰티 · 브랜딩 · 2026</span>
+              </div>
+
+              <div class="case-feature__copy">
+                <h3 data-feature-title>HAKIT Shop</h3>
+                <p class="case-feature__subtitle" data-feature-subtitle>뷰티 브랜드 스토어 리뉴얼 · 2026</p>
+                <p class="case-feature__description" data-feature-description>
+                  브랜드 소개부터 상품 상세, 커뮤니티, 장바구니까지 폭넓게 구성한
+                  뷰티 커머스 프로젝트입니다. 비주얼 중심의 브랜드 경험과 쇼핑 흐름이
+                  함께 보이도록 여러 화면을 일관된 톤으로 정리했습니다.
+                </p>
+                <div class="case-feature__tags" data-feature-tags>
+                  <span class="case-tag case-tag--accent">커머스</span>
+                  <span class="case-tag case-tag--accent">브랜드 경험</span>
+                  <span class="case-tag case-tag--accent">반응형</span>
+                </div>
+              </div>
+
+              <div class="case-feature__footer">
+                <a class="case-feature__footer-link" data-feature-link-text href="./portfolio/hakit_shop/html/main.html">프로젝트 페이지 보기</a>
+                <a class="case-feature__link" data-feature-link-button href="./portfolio/hakit_shop/html/main.html" aria-label="HAKIT Shop 프로젝트 페이지로 이동">
+                  ↗
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <div class="case-grid" data-case-grid>
+            <a class="case-card" href="./portfolio/ananti_hotel/html/anantimain.html" aria-label="ANANTI HOTEL 프로젝트 페이지로 이동">
+              <div class="case-card__media">
+                <img src="./portfolio/ananti_hotel/ananti_hotel_plan/img/hotel_main.png" alt="ANANTI HOTEL 대표 화면" />
+                <div class="case-card__media-overlay"></div>
+                <div class="case-card__metric">
+                  <strong>7+</strong>
+                  <span>서브 페이지</span>
+                </div>
+              </div>
+
+              <div class="case-card__body">
+                <div class="case-card__header">
+                  <div>
+                    <h3>ANANTI HOTEL</h3>
+                    <p>호텔 프로모션 사이트 · 2026</p>
+                  </div>
+                  <strong>02</strong>
+                </div>
+                <p class="case-card__description">
+                  객실, 프로모션, 부대시설, 여행 정보까지 이어지는 호텔 경험을
+                  시각 중심으로 풀어낸 프로젝트입니다. 풍부한 이미지와 서브 페이지
+                  구조를 통해 브랜드 무드를 강화했습니다.
+                </p>
+                <div class="case-card__tags">
+                  <span class="case-tag case-tag--neutral">호텔 브랜딩</span>
+                  <span class="case-tag case-tag--neutral">웹사이트</span>
+                  <span class="case-tag case-tag--neutral">서브 페이지</span>
+                </div>
+              </div>
+            </a>
+
+            <a class="case-card" href="./portfolio/food/pages/main.php" aria-label="Food Center 프로젝트 페이지로 이동">
+              <div class="case-card__media">
+                <img src="./portfolio/food/images/main.jpg" alt="Food Center 대표 화면" />
+                <div class="case-card__media-overlay"></div>
+                <div class="case-card__metric">
+                  <strong>8+</strong>
+                  <span>구성 페이지</span>
+                </div>
+              </div>
+
+              <div class="case-card__body">
+                <div class="case-card__header">
+                  <div>
+                    <h3>Food Center</h3>
+                    <p>서울 식생활종합센터 클론코딩 · 2026</p>
+                  </div>
+                  <strong>03</strong>
+                </div>
+                <p class="case-card__description">
+                  메인 화면과 공지, 강좌, 조사 페이지를 포함한 공공 정보성 사이트
+                  프로젝트입니다. 정보 구조와 게시판형 콘텐츠 흐름을 안정적으로
+                  구성하는 데 집중했습니다.
+                </p>
+                <div class="case-card__tags">
+                  <span class="case-tag case-tag--neutral">공공 웹</span>
+                  <span class="case-tag case-tag--neutral">게시판</span>
+                  <span class="case-tag case-tag--neutral">정보 구조</span>
+                </div>
+              </div>
+            </a>
+
+            <a class="case-card" href="./portfolio/travelblog/html/index.html" aria-label="Travel Blog 프로젝트 페이지로 이동">
+              <div class="case-card__media">
+                <img src="./portfolio/travelblog/source/tokyo.jpg" alt="Travel Blog 대표 화면" />
+                <div class="case-card__media-overlay"></div>
+                <div class="case-card__metric">
+                  <strong>4+</strong>
+                  <span>콘텐츠 모듈</span>
+                </div>
+              </div>
+
+              <div class="case-card__body">
+                <div class="case-card__header">
+                  <div>
+                    <h3>Travel Blog</h3>
+                    <p>여행 매거진 · 블로그 UI · 2026</p>
+                  </div>
+                  <strong>04</strong>
+                </div>
+                <p class="case-card__description">
+                  여행 기사와 추천 콘텐츠를 카드형 레이아웃과 탭 인터랙션으로 풀어낸
+                  프로젝트입니다. 매거진 스타일의 시선 흐름과 가벼운 인터랙션이
+                  중심이 됩니다.
+                </p>
+                <div class="case-card__tags">
+                  <span class="case-tag case-tag--neutral">콘텐츠</span>
+                  <span class="case-tag case-tag--neutral">탭 UI</span>
+                  <span class="case-tag case-tag--neutral">웹사이트</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="expertise-section" id="skills" aria-labelledby="expertise-title">
+        <div class="expertise-section__inner">
+          <div class="section-heading section-heading--split">
+            <div>
+              <p class="section-heading__eyebrow">03 — 전문성</p>
+              <h2 class="section-heading__title" id="expertise-title">스킬 &amp; 툴</h2>
+            </div>
+            <p class="expertise-section__intro">
+              초기 리서치부터 완성된 UI까지 - 풀스택 디자인 툴킷을 보유하고 있습니다.
+            </p>
+          </div>
+
+          <div class="expertise-grid">
+            <article class="skill-cluster" data-reveal style="--reveal-delay: 0ms">
+              <div class="skill-cluster__header">
+                <span class="skill-cluster__bar skill-cluster__bar--accent"></span>
+                <span class="skill-cluster__badge skill-cluster__badge--accent">리서치 &amp; 전략</span>
+              </div>
+              <div class="skill-cluster__tags">
+                <span class="skill-pill">사용자 인터뷰</span>
+                <span class="skill-pill">Jobs-to-be-Done</span>
+                <span class="skill-pill">경쟁사 분석</span>
+                <span class="skill-pill">정보 구조설계</span>
+                <span class="skill-pill">여정 맵핑</span>
+                <span class="skill-pill">이해관계자 정렬</span>
+              </div>
+            </article>
+
+            <article class="skill-cluster" data-reveal style="--reveal-delay: 100ms">
+              <div class="skill-cluster__header">
+                <span class="skill-cluster__bar skill-cluster__bar--dark"></span>
+                <span class="skill-cluster__badge skill-cluster__badge--dark">디자인 &amp; 크래프트</span>
+              </div>
+              <div class="skill-cluster__tags">
+                <span class="skill-pill">UI 디자인</span>
+                <span class="skill-pill">인터랙션 디자인</span>
+                <span class="skill-pill">디자인 시스템</span>
+                <span class="skill-pill">고충실도 프로토타입</span>
+                <span class="skill-pill">모션 디자인</span>
+                <span class="skill-pill">시각적 위계</span>
+              </div>
+            </article>
+
+            <article class="skill-cluster" data-reveal style="--reveal-delay: 200ms">
+              <div class="skill-cluster__header">
+                <span class="skill-cluster__bar skill-cluster__bar--success"></span>
+                <span class="skill-cluster__badge skill-cluster__badge--success">데이터 &amp; 기술</span>
+              </div>
+              <div class="skill-cluster__tags">
+                <span class="skill-pill">데이터 시각화</span>
+                <span class="skill-pill">A/B 테스트</span>
+                <span class="skill-pill">애널리틱스(Mixpanel)</span>
+                <span class="skill-pill">HTML / CSS</span>
+                <span class="skill-pill">React 기초</span>
+                <span class="skill-pill">Tailwind CSS</span>
+              </div>
+            </article>
+          </div>
+
+          <section class="toolkit-panel" data-reveal style="--reveal-delay: 100ms" aria-labelledby="toolkit-title">
+            <div class="toolkit-panel__intro">
+              <p class="toolkit-panel__eyebrow">스킬셋</p>
+              <h3 class="toolkit-panel__title" id="toolkit-title">
+                <span>매일 사용하는</span>
+                <span>스킬들</span>
+              </h3>
+            </div>
+
+            <div class="toolkit-cloud">
+              <div class="tool-chip" style="--float-delay: 0s">
+                <strong>Figma</strong>
+                <span>디자인</span>
+              </div>
+              <div class="tool-chip" style="--float-delay: 0.4s">
+                <strong>Adobe Photoshop</strong>
+                <span>그래픽</span>
+              </div>
+              <div class="tool-chip" style="--float-delay: 0.8s">
+                <strong>Adobe Illustrator</strong>
+                <span>브랜딩</span>
+              </div>
+              <div class="tool-chip" style="--float-delay: 1.2s">
+                <strong>Visual Studio Code</strong>
+                <span>개발</span>
+              </div>
+              <div class="tool-chip" style="--float-delay: 1.6s">
+                <strong>Herd</strong>
+                <span>로컬 서버</span>
+              </div>
+              <div class="tool-chip" style="--float-delay: 2s">
+                <strong>GitHub</strong>
+                <span>협업</span>
+              </div>
+              <div class="tool-chip" style="--float-delay: 2.4s">
+                <strong>ChatGPT</strong>
+                <span>리서치</span>
+              </div>
+              <div class="tool-chip" style="--float-delay: 0.2s">
+                <strong>Gemini</strong>
+                <span>아이데이션</span>
+              </div>
+              <div class="tool-chip" style="--float-delay: 0.6s">
+                <strong>Notion</strong>
+                <span>문서화</span>
+              </div>
+              <div class="tool-chip" style="--float-delay: 1s">
+                <strong>Vue3</strong>
+                <span>프론트엔드</span>
+              </div>
+              <div class="tool-chip" style="--float-delay: 1.4s">
+                <strong>Nuxt.js</strong>
+                <span>SSR</span>
+              </div>
+              <div class="tool-chip" style="--float-delay: 1.8s">
+                <strong>Tailwind CSS</strong>
+                <span>유틸리티 CSS</span>
+              </div>
+              <div class="tool-chip" style="--float-delay: 2.2s">
+                <strong>Bootstrap</strong>
+                <span>UI 프레임워크</span>
+              </div>
+              <div class="tool-chip" style="--float-delay: 2.6s">
+                <strong>PHP Laravel</strong>
+                <span>백엔드</span>
+              </div>
+              <div class="tool-chip" style="--float-delay: 3s">
+                <strong>HTML</strong>
+                <span>마크업</span>
+              </div>
+              <div class="tool-chip" style="--float-delay: 3.4s">
+                <strong>HTML5</strong>
+                <span>웹 표준</span>
+              </div>
+              <div class="tool-chip" style="--float-delay: 3.8s">
+                <strong>CSS</strong>
+                <span>스타일링</span>
+              </div>
+              <div class="tool-chip" style="--float-delay: 4.2s">
+                <strong>SCSS</strong>
+                <span>CSS 전처리기</span>
+              </div>
+              <div class="tool-chip" style="--float-delay: 4.6s">
+                <strong>CSS3</strong>
+                <span>모던 CSS</span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="philosophy-section" aria-labelledby="philosophy-title">
+        <div class="philosophy-section__inner">
+          <div class="philosophy-hero">
+            <div class="philosophy-hero__intro" data-reveal style="--reveal-delay: 0ms">
+              <p class="philosophy-hero__eyebrow">04 — 디자인 철학</p>
+              <h2 class="philosophy-hero__title" id="philosophy-title">
+                저는 <span>시스템적 사고로</span> 디자인합니다.
+              </h2>
+            </div>
+
+            <div class="philosophy-hero__body" data-reveal style="--reveal-delay: 120ms">
+              <p>
+                가장 임팩트 있는 디자인은 전체 생태계를 이해할 때 탄생합니다 -
+                사용자의 멘탈 모델, 팀의 제약, 시장 역학, 그리고 기술적 실현
+                가능성까지.
+              </p>
+              <p>
+                엄격한 사용자 리서치와 강한 심미적 감각을 결합하여, 항상 측정 가능한
+                결과를 위해 디자인합니다. 포트폴리오를 위한 디자인이 아닌, 실제
+                사람들의 실제 문제 해결을 위해 디자인합니다.
+              </p>
+              <blockquote>
+                "최고의 UX는 보이지 않습니다 - 사용자는 그저 하려던 일을 완수할
+                뿐입니다."
+              </blockquote>
+            </div>
+          </div>
+
+          <div class="philosophy-process">
+            <article class="process-card" data-reveal style="--reveal-delay: 0ms">
+              <strong class="process-card__index">01</strong>
+              <h3 class="process-card__title">발견</h3>
+              <p class="process-card__description">
+                사용자 인터뷰, 행동 분석, 경쟁사 조사를 통해 사람들이 진정으로
+                필요로 하는 것을 파악합니다.
+              </p>
+            </article>
+
+            <article class="process-card" data-reveal style="--reveal-delay: 80ms">
+              <strong class="process-card__index">02</strong>
+              <h3 class="process-card__title">정의</h3>
+              <p class="process-card__description">
+                조사 결과를 명확한 문제 정의, 여정 맵, 서비스 청사진으로 종합해
+                모든 이해관계자를 한 방향으로 정렬합니다.
+              </p>
+            </article>
+
+            <article class="process-card" data-reveal style="--reveal-delay: 160ms">
+              <strong class="process-card__index">03</strong>
+              <h3 class="process-card__title">디자인</h3>
+              <p class="process-card__description">
+                와이어프레임부터 픽셀 완성 UI까지 빠르게 반복합니다. 모든 결정은
+                심미성이 아닌 근거에 기반합니다.
+              </p>
+            </article>
+
+            <article class="process-card" data-reveal style="--reveal-delay: 240ms">
+              <strong class="process-card__index">04</strong>
+              <h3 class="process-card__title">측정</h3>
+              <p class="process-card__description">
+                출시 후 KPI를 모니터링하고 사용 데이터를 분석해 지속적으로
+                개선합니다. 좋은 디자인은 완성이 아닙니다.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-log" aria-labelledby="project-log-title">
+        <div class="project-log__inner">
+          <div class="section-heading section-heading--split">
+            <div>
+              <p class="section-heading__eyebrow">05 — 경력</p>
+              <h2 class="section-heading__title" id="project-log-title">프로젝트 로그</h2>
+            </div>
+            <p class="project-log__intro">
+              단순한 산출물이 아닌 결과물의 기록입니다. 각 행을 클릭하면 상세 내용을
+              볼 수 있습니다.
+            </p>
+          </div>
+
+          <div class="project-log__table-head">
+            <span>프로젝트</span>
+            <span>역할 · 연도</span>
+            <span>성과</span>
+          </div>
+
+          <div class="project-log__list">
+            <article class="project-log__entry" data-log-entry>
+              <button class="project-log__row" type="button" aria-expanded="false" data-log-toggle>
+                <div class="project-log__project">
+                  <span class="project-log__chevron" aria-hidden="true">⌄</span>
+                  <div class="project-log__project-main">
+                    <h3>차세대 에너지 통합 관리 플랫폼 신규 구축</h3>
+                    <div class="project-log__meta">
+                      <span class="project-log__company">에너지 IT 솔루션 기업</span>
+                      <span class="project-log__dot"></span>
+                      <span class="project-log__mini-tag">Vue3</span>
+                      <span class="project-log__mini-tag">Nuxt.js</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="project-log__role">프론트엔드 개발 · 에너지 플랫폼</span>
+                <span class="project-log__badge project-log__badge--success">플랫폼 론칭 완료</span>
+              </button>
+              <div class="project-log__details">
+                <div class="project-log__details-inner">
+                  <p>
+                    Vue3 Composition API와 Nuxt.js 기반으로 프론트엔드 아키텍처를
+                    설계하고, Chart.js 및 지도 API를 활용한 실시간 대시보드와 발전
+                    데이터 시각화를 구현했습니다. REST API 비동기 처리 안정화와
+                    재사용 가능한 컴포넌트 설계까지 함께 수행했습니다.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-log__entry" data-log-entry>
+              <button class="project-log__row" type="button" aria-expanded="false" data-log-toggle>
+                <div class="project-log__project">
+                  <span class="project-log__chevron" aria-hidden="true">⌄</span>
+                  <div class="project-log__project-main">
+                    <h3>에너지 관제 시스템 고도화 및 유지보수</h3>
+                    <div class="project-log__meta">
+                      <span class="project-log__company">레거시 에너지 관제 시스템</span>
+                      <span class="project-log__dot"></span>
+                      <span class="project-log__mini-tag">Laravel</span>
+                      <span class="project-log__mini-tag">반응형 개선</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="project-log__role">운영 개선 · 레거시 고도화</span>
+                <span class="project-log__badge project-log__badge--accent">운영 효율 개선</span>
+              </button>
+              <div class="project-log__details">
+                <div class="project-log__details-inner">
+                  <p>
+                    PHP Laravel 기반 시스템에서 관리자 페이지와 사용자 대시보드의
+                    UI/UX를 개선하고, 발전 시간 비교 및 보고서 자동화 기능을
+                    추가했습니다. Bootstrap 레이아웃, 캘린더, 데이터 테이블 구조를
+                    손보며 운영 편의성과 고객 대응 효율을 높였습니다.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-log__entry" data-log-entry>
+              <button class="project-log__row" type="button" aria-expanded="false" data-log-toggle>
+                <div class="project-log__project">
+                  <span class="project-log__chevron" aria-hidden="true">⌄</span>
+                  <div class="project-log__project-main">
+                    <h3>푸드테크 브랜드 운영 및 전시 기획 지원</h3>
+                    <div class="project-log__meta">
+                      <span class="project-log__company">3D 푸드 프린팅 솔루션 기업</span>
+                      <span class="project-log__dot"></span>
+                      <span class="project-log__mini-tag">브랜드</span>
+                      <span class="project-log__mini-tag">전시 운영</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="project-log__role">브랜드 지원 · 비즈니스 기획</span>
+                <span class="project-log__badge project-log__badge--warm">인지도 향상</span>
+              </button>
+              <div class="project-log__details">
+                <div class="project-log__details-inner">
+                  <p>
+                    홍보 영상 스토리보드 기획, 브랜드 홍보물 제작, Imweb 기반
+                    홈페이지 관리, 오프라인 전시회 부스 운영까지 전담했습니다.
+                    기술이 시장과 만나는 접점을 설계하면서 브랜드 일관성과 현장
+                    커뮤니케이션 역량을 함께 키웠습니다.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience-section" aria-labelledby="experience-title">
+        <div class="experience-section__inner">
+          <div class="section-heading section-heading--split">
+            <div>
+              <p class="section-heading__eyebrow">06 — 실무 경험</p>
+              <h2 class="section-heading__title" id="experience-title">프로젝트 디테일</h2>
+            </div>
+            <p class="experience-section__intro">
+              기술 선택, 문제 정의, 실행, 그리고 배운 점까지. 실제 현장에서
+              수행한 경험을 STAR 구조로 정리했습니다.
+            </p>
+          </div>
+
+          <div class="experience-list">
+            <article class="experience-card" data-reveal style="--reveal-delay: 0ms">
+              <div class="experience-card__header">
+                <div class="experience-card__headline">
+                  <span class="experience-card__index">01</span>
+                  <div>
+                    <p class="experience-card__eyebrow">에너지 IT 솔루션 기업</p>
+                    <h3 class="experience-card__title">신규 플랫폼 구축</h3>
+                    <p class="experience-card__subtitle">
+                      Vue3, Nuxt.js, 데이터 시각화, 비동기 통신
+                    </p>
+                  </div>
+                </div>
+
+                <div class="experience-card__tags">
+                  <span class="experience-chip experience-chip--accent">Vue3</span>
+                  <span class="experience-chip experience-chip--accent">Nuxt.js</span>
+                  <span class="experience-chip experience-chip--accent">Chart.js</span>
+                  <span class="experience-chip experience-chip--accent">SSR</span>
+                </div>
+              </div>
+
+              <div class="experience-card__content">
+                <aside class="experience-card__summary">
+                  <p>
+                    태양광 모니터링 시스템 전문 기업 재직 당시, 기업의 지속 가능
+                    경영(RE100)을 지원하기 위한 차세대 에너지 통합 관리 플랫폼을
+                    구축했습니다.
+                  </p>
+                  <div class="experience-card__highlight">
+                    <span>Insight</span>
+                    <strong>
+                      대량 수치 데이터에서는 데이터의 가독성과 컴포넌트 설계 품질이
+                      사용자 의사결정 속도를 좌우한다는 점을 깊이 체감했습니다.
+                    </strong>
+                  </div>
+                </aside>
+
+                <div class="experience-card__blocks">
+                  <section class="experience-block">
+                    <span class="experience-block__label">S</span>
+                    <p>
+                      RE100 지원을 위한 차세대 에너지 통합 관리 플랫폼 구축
+                      프로젝트에 참여했습니다.
+                    </p>
+                  </section>
+
+                  <section class="experience-block">
+                    <span class="experience-block__label">T</span>
+                    <p>
+                      디자인 시안을 기반으로 프론트엔드 아키텍처를 설계하고, 실시간
+                      발전 데이터를 직관적으로 보여 주는 대시보드와 시각화 기능을
+                      구현해야 했습니다.
+                    </p>
+                  </section>
+
+                  <section class="experience-block experience-block--wide">
+                    <span class="experience-block__label">A</span>
+                    <ul class="experience-action-list">
+                      <li>
+                        Vue3 Composition API와 Nuxt.js를 도입해 개발 생산성과 SSR
+                        기반 성능 최적화를 함께 확보했습니다.
+                      </li>
+                      <li>
+                        Tailwind CSS로 다양한 디바이스에 대응하는 반응형 UI를
+                        구축하고, Chart.js와 지도 API로 전국 발전 순위, 동적 그래프,
+                        위치 기반 데이터 렌더링을 구현했습니다.
+                      </li>
+                      <li>
+                        REST API 비동기 처리를 안정화하고, Vee-validate와 재사용
+                        가능한 UI 컴포넌트 설계로 폼 검증과 개발 리소스를
+                        체계화했습니다.
+                      </li>
+                    </ul>
+                  </section>
+
+                  <section class="experience-block">
+                    <span class="experience-block__label">R</span>
+                    <p>
+                      플랫폼을 성공적으로 론칭했고, 디바이스 환경에 구애받지 않는
+                      사용자 경험을 제공했습니다.
+                    </p>
+                  </section>
+
+                  <section class="experience-block">
+                    <span class="experience-block__label">I</span>
+                    <p>
+                      데이터 시각화는 단순한 표현이 아니라 의사결정을 돕는 구조라는
+                      관점을 갖게 되었습니다.
+                    </p>
+                  </section>
+                </div>
+              </div>
+            </article>
+
+            <article class="experience-card" data-reveal style="--reveal-delay: 100ms">
+              <div class="experience-card__header">
+                <div class="experience-card__headline">
+                  <span class="experience-card__index">02</span>
+                  <div>
+                    <p class="experience-card__eyebrow">에너지 관제 시스템</p>
+                    <h3 class="experience-card__title">시스템 고도화 및 유지보수</h3>
+                    <p class="experience-card__subtitle">
+                      PHP Laravel, 반응형 웹 개선, 운영 효율화
+                    </p>
+                  </div>
+                </div>
+
+                <div class="experience-card__tags">
+                  <span class="experience-chip experience-chip--neutral">Laravel</span>
+                  <span class="experience-chip experience-chip--neutral">Bootstrap</span>
+                  <span class="experience-chip experience-chip--neutral">GitLab</span>
+                  <span class="experience-chip experience-chip--neutral">Figma</span>
+                </div>
+              </div>
+
+              <div class="experience-card__content">
+                <aside class="experience-card__summary">
+                  <p>
+                    PHP 및 Laravel 기반으로 운영 중이던 기존 에너지 관제 시스템의
+                    유지보수와 고도화를 맡아, 레거시 구조를 분석하고 사용자 흐름을
+                    현대화했습니다.
+                  </p>
+                  <div class="experience-card__highlight">
+                    <span>Insight</span>
+                    <strong>
+                      기존 시스템의 한계를 파악하고 단계적으로 개선하는 과정에서 코드
+                      분석력과 사용자 피드백 대응 역량을 크게 키웠습니다.
+                    </strong>
+                  </div>
+                </aside>
+
+                <div class="experience-card__blocks">
+                  <section class="experience-block">
+                    <span class="experience-block__label">S</span>
+                    <p>
+                      노후화된 관리자 페이지와 사용자 대시보드를 포함한 레거시 관제
+                      시스템이 운영 중이었습니다.
+                    </p>
+                  </section>
+
+                  <section class="experience-block">
+                    <span class="experience-block__label">T</span>
+                    <p>
+                      UI/UX를 개선하고 발전 시간 비교, 보고서 자동화 등 신규 기능을
+                      추가해 운영 효율을 높여야 했습니다.
+                    </p>
+                  </section>
+
+                  <section class="experience-block experience-block--wide">
+                    <span class="experience-block__label">A</span>
+                    <ul class="experience-action-list">
+                      <li>
+                        Bootstrap 기반 레이아웃을 반응형으로 전면 개선하고,
+                        캘린더와 데이터 테이블 구조를 최적화해 관리 편의성을
+                        높였습니다.
+                      </li>
+                      <li>
+                        발전소 계통도 레이아웃 조정과 프로그레스 바 형태의 발전 정보
+                        시각화 기능을 추가해 관제 직관성을 높였습니다.
+                      </li>
+                      <li>
+                        GitLab과 Figma 코멘트를 활용해 요구사항 공유와 형상관리를
+                        실시간으로 진행했습니다.
+                      </li>
+                    </ul>
+                  </section>
+
+                  <section class="experience-block">
+                    <span class="experience-block__label">R</span>
+                    <p>
+                      레이아웃 최적화와 보고서 시스템 개선으로 고객 문의 대응
+                      리소스를 줄이고 관리 효율을 높였습니다.
+                    </p>
+                  </section>
+
+                  <section class="experience-block">
+                    <span class="experience-block__label">I</span>
+                    <p>
+                      레거시는 고치는 대상이 아니라 운영 맥락을 이해하며 진화시켜야
+                      하는 시스템이라는 감각을 얻게 됐습니다.
+                    </p>
+                  </section>
+                </div>
+              </div>
+            </article>
+
+            <article class="experience-card" data-reveal style="--reveal-delay: 200ms">
+              <div class="experience-card__header">
+                <div class="experience-card__headline">
+                  <span class="experience-card__index">03</span>
+                  <div>
+                    <p class="experience-card__eyebrow">푸드테크 스타트업</p>
+                    <h3 class="experience-card__title">비즈니스 지원 및 기획</h3>
+                    <p class="experience-card__subtitle">
+                      브랜드 관리, 전시회 기획, 멀티태스킹 역량
+                    </p>
+                  </div>
+                </div>
+
+                <div class="experience-card__tags">
+                  <span class="experience-chip experience-chip--warm">브랜드</span>
+                  <span class="experience-chip experience-chip--warm">전시 운영</span>
+                  <span class="experience-chip experience-chip--warm">Imweb</span>
+                  <span class="experience-chip experience-chip--warm">콘텐츠 기획</span>
+                </div>
+              </div>
+
+              <div class="experience-card__content">
+                <aside class="experience-card__summary">
+                  <p>
+                    3D 푸드 프린팅 솔루션 기업에서 브랜드 가치 제고와 대외 홍보를
+                    위한 통합 마케팅 지원 업무를 맡아 기술과 시장 사이의 접점을
+                    설계했습니다.
+                  </p>
+                  <div class="experience-card__highlight">
+                    <span>Insight</span>
+                    <strong>
+                      기술이 시장에 전달되기까지의 전체 흐름을 경험하면서, 개발 외적
+                      커뮤니케이션과 협업의 유연성이 얼마나 중요한지 배웠습니다.
+                    </strong>
+                  </div>
+                </aside>
+
+                <div class="experience-card__blocks">
+                  <section class="experience-block">
+                    <span class="experience-block__label">S</span>
+                    <p>
+                      자사 기술력을 시장에 알리고 브랜드 가치를 높이기 위한 마케팅
+                      지원 체계가 필요했습니다.
+                    </p>
+                  </section>
+
+                  <section class="experience-block">
+                    <span class="experience-block__label">T</span>
+                    <p>
+                      국내외 전시회 운영 준비와 온·오프라인 홍보 콘텐츠 기획 및
+                      관리를 전담해야 했습니다.
+                    </p>
+                  </section>
+
+                  <section class="experience-block experience-block--wide">
+                    <span class="experience-block__label">A</span>
+                    <ul class="experience-action-list">
+                      <li>
+                        홍보 영상 스토리보드를 기획하고 제작사와 커뮤니케이션했으며,
+                        팜플렛과 PPT 등 브랜드 아이덴티티가 담긴 홍보물을 제작했습니다.
+                      </li>
+                      <li>
+                        Imweb 기반 공식 홈페이지를 운영하며 실시간 기술 자료와 콘텐츠를
+                        업데이트했습니다.
+                      </li>
+                      <li>
+                        오프라인 전시회 부스를 직접 기획·운영하며 잠재 고객의 니즈를
+                        파악하고 브랜드 노출을 극대화했습니다.
+                      </li>
+                    </ul>
+                  </section>
+
+                  <section class="experience-block">
+                    <span class="experience-block__label">R</span>
+                    <p>
+                      일관된 브랜드 이미지 구축과 성공적인 전시 참여를 통해 솔루션
+                      인지도를 높였습니다.
+                    </p>
+                  </section>
+
+                  <section class="experience-block">
+                    <span class="experience-block__label">I</span>
+                    <p>
+                      제품 자체뿐 아니라 그것이 전달되는 맥락까지 설계해야 진짜
+                      비즈니스 임팩트가 난다는 관점을 갖게 됐습니다.
+                    </p>
+                  </section>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer" aria-label="사이트 푸터">
+        <div class="site-footer__inner">
+          <div class="site-footer__top">
+            <div class="site-footer__brand-block">
+              <div class="site-footer__brand">
+                <span class="site-footer__mark" aria-hidden="true">강혜</span>
+                <span class="site-footer__name">강혜림</span>
+              </div>
+              <p class="site-footer__description">
+                2018년부터 인간 중심의 디지털 경험을 만드는 UI/UX 디자이너 &amp;
+                프로덕트 전략가입니다.
+              </p>
+            </div>
+
+            <div class="site-footer__contact">
+              <div class="site-footer__availability" aria-label="현재 작업 상태">
+                <span class="site-footer__availability-dot" aria-hidden="true"></span>
+                <span>프로젝트 작업 중</span>
+              </div>
+              <a class="site-footer__email" href="mailto:hello@kanghyerim.design">
+                hello@kanghyerim.design →
+              </a>
+            </div>
+          </div>
+
+          <div class="site-footer__bottom">
+            <nav class="site-footer__nav" aria-label="푸터 탐색">
+              <button type="button" data-scroll-target="#work">작업</button>
+              <button type="button" data-scroll-target="#about">소개</button>
+              <button type="button" data-scroll-target="#skills">스킬</button>
+              <a href="mailto:hello@kanghyerim.design">연락</a>
+            </nav>
+            <p class="site-footer__copyright">
+              © 2025 강혜림 · 서울, 대한민국 · 의도를 담아 디자인합니다
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

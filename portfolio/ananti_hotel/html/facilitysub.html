@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- script file -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+    crossorigin="anonymous"></script>
+
+  <!-- css file -->
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/facilitysub.css">
+
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+
+ 
+  
+
+
+  <title>아난티 호텔 포트폴리오 작업</title>
+
+  <script>
+    $(function () {
+
+      $("#menu_open").mouseover(function () {
+
+        $("#navbox").fadeIn();
+      });
+
+      $("#menu_close").click(function () {
+        $("#navbox").fadeOut();
+      });
+
+      $("#submenu_3").mouseover(function () {
+        $("#navbox").css("padding-bottom", "529px")
+      });
+
+      $("#submenu_3").mouseout(function () {
+        $(".navbox").css("padding-bottom", "688px")
+      });
+
+
+    });
+  </script>
+</head>
+
+<body>
+
+  <!-- 세로 메인메뉴 만들기 -->
+  <div class="navbox" id="navbox" style="z-index: 10;">
+
+    <div class="menu_name">
+      <ul>
+        <li><a href="anantimain.html">ANANTI HILTON BUSAN</a></li>
+        <li id="menu_close">X</li>
+        <li class="clear"></li>
+      </ul>
+    </div>
+
+    <ul class="nav">
+
+      <li><a href="roomsub1.html">Accomodation</a>
+        <!--
+              <ul class="submenu">
+                  <li><a href="#">menu1-1</a></li>
+                  <li><a href="#">menu1-2</a></li>
+                  <li><a href="#">menu1-3</a></li>
+                  <li><a href="#">menu1-4</a></li>
+                </ul>-->
+      </li>
+      <li><a href="facilitysub.html">Facility</a>
+
+        <!--
+              <ul class="submenu">
+                  <li><a href="#">menu1-1</a></li>
+                  <li><a href="#">menu1-2</a></li>
+                  <li><a href="#">menu1-3</a></li>
+                  <li><a href="#">menu1-4</a></li>
+                </ul>-->
+      </li>
+      <li id="submenu_3"><a href="travelsub.html">Promotion</a>
+
+        <ul class="submenu">
+          <li><a href="travelsub.html">Travel</a></li>
+          <li><a href="newssub.html">News</a></li>
+          <!-- <li><a href="eventsub.html">Program</a></li> -->
+        </ul>
+      </li>
+
+
+    </ul>
+  </div>
+
+  <!-- 메인 페이지 제작 헤더-비주얼 -->
+  <header>
+    <div class="main_container">
+
+      <div class="navi_bg">
+        <ul>
+          <li id="menu_open">
+
+            <i class="fas fa-bars menu f-18"></i>
+
+          </li>
+
+          <li class="f-rix">
+            <a href="../html/anantimain.html"><img src="../img/common/logo.png" alt=""></a>
+          </li>
+
+          <li>
+            <span class="f-12">KR <i class="fas fa-caret-down "></i></span>
+            &nbsp;
+            &nbsp;
+            <span class="f-12">Book</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- visual 배경 -->
+      <div class="visual_bg">
+
+        <div class="visualtext" data-aos="fade-up" data-aos-anchor-placement="bottom-center" data-aos-duration="2000">
+          <b class="f-48"> WE LOVE ANANTI! </b> <br>
+          <br>
+          <span class="f-24">
+
+            오션뷰로 채워진 눈부시게 아름다운 공간 <br>
+            아난티 힐튼 시설을 소개합니다
+
+
+          </span><br>
+          <br>
+          <!-- button -->
+
+          <div class="btnbox1">
+            <a href="facilitysub.html">
+              <button class="btn1 f-18">view more</button>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- 섹션 시작 -->
+
+  <!-- facility 섹션1  start -->
+
+  <section class="sec01">
+    <div class="sub_title1">
+      Facility
+    </div>
+
+    <!-- sec01 contents -->
+    <div class="sec01_content">
+
+      <div class="sec01_colorbox"></div>
+
+      <div class="sec01_img" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000"></div>
+      <div class="sec01_img" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="2000"></div>
+      <div class="sec01_img" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="3000"> </div>
+    </div>
+
+  </section>
+
+
+
+
+
+  <!-- section02 facility2 start -->
+
+  <section class="sec02">
+
+    <div class="f-24"></div>
+
+    <!-- sec02 contents -->
+
+    <div class="sec02_content" data-aos="fade-up" data-aos-duration="4000">
+    
+      <div class="sec02_imgbox">
+        <img src="../img/facility/oceanpool.png" alt="">
+      </div>
+    
+      <div class="sec02_textbox">
+        <b class="f-24">Ocean Infinity Pool</b><br>
+        <br><br>
+        <b class="f-18">우리나라 최고의 오션 인피티니 풀</b> <br>
+        <br>
+        바다와 맞닿은 오션 인피니티 풀을 경험하고 싶다면?<br>
+        제대로 된 호텔 서비스를 누리며 여유로운 물놀이를 즐기고 싶다면?<br>
+        아난티 힐튼으로 오세요!<br>
+        경험을 만끽해보시기 바랍니다!<br>
+        <br>
+        넓고 아름다운 수영장과 여유로운 풀 사이드<br>
+        18.5 x 40 x 1m 규모의 인피티니 풀을 비롯해,<br>
+        2층에 위치한 성인 전용 인피니티 풀은 여유로운 물놀이를 동선을 제공합니다.<br>
+        풀 사이드에 넉넉하게 준비된 데이 베드는 태닝을 하거나 낮잠을 즐기기에 적합합니다.<br>
+      </div>
+    
+    </div>
+
+  </section>
+
+
+
+  <!-- section03  start-->
+
+  <section class="sec03">
+
+
+    <!-- sec03 contents -->
+
+    <div class="sec03_content">
+
+      <img src="../img/facility/fitness.png" alt="">
+      <img src="../img/facility/facility_Content1png.png" alt="">
+      <img src="../img/facility/wedding.jpg" alt="">
+
+      <div class="sec03_t1">Fitness Center</div>
+      <div class="sec03_t2">Banquet</div>
+      <div class="sec03_t3">Wedding</div>
+
+    </div>
+
+  </section>
+
+
+  <!-- section03 promotion end-->
+
+
+
+
+<!-- section04 dining start -->
+<section class="sec04">
+
+  <!-- sec04 contents -->
+
+  <div class="sec04_content" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+
+    <ul>
+
+      <li>
+        <p>04</p>
+        <div class="sec04_img1"></div>
+        <div class="sec04_text">
+          <br><br>
+          볼룸 <br>
+          <br>
+          <span class="sec04_t3 f-14">"감동적인 칵테일 리셉션과 애프터 파티" <br>
+
+            아난티 힐튼 부산의 볼룸은 <br>약990 으로 극장식 배치로,<br>
+
+            최대 1,000명 행사를 할 수 있는<br> 연회장입니다. <br>
+
+            가장 완벽한 오션뷰를 자랑하는 공간이며,<br>
+
+            오션가든과 연결되어 있어 회의 후 <br>
+
+            감동적인 칵테일 리셉션이나 <br>애프터 파티를 연출 할 수 있습니다.</span>
+
+        </div>
+
+      </li>
+
+      <li>
+        <p>03</p>
+        <div class="sec04_img2"></div>
+        <div class="sec04_text">
+          <br><br>
+          오션가든 & 오션테라스
+          <br><br>
+          <span class="sec04_t3 f-14">
+            “소규모 미팅 및 프라이빗 행사”<br>
+            오션가든과 오션테라스는<br> 아난티 힐튼 부산의 야외 연회장으로 <br>
+            VIP를 위한 <br>연회 행사 및 테마 파티로 <br>이용 할 수 있습니다.
+            오염되지 않은 푸른 바다와 싱그러운 잔디가 주는 자연의 아름다움을 감상하며<br>
+            성공적인 연회경험을 <br>만끽해보시기 바랍니다.<br>
+          </span>
+
+        </div>
+      </li>
+
+      <li>
+        <p>02</p>
+        <div class="sec04_img3"></div>
+        <div class="sec04_text">
+          <br><br>
+          크루즈 그랜드 볼룸<br>
+          <br>
+          <span class="sec04_t3 f-14">
+            "통유리의 오션뷰, 웅장함과 여유로움"<br>
+            <br>
+            아난티 힐튼 부산의 <br>크루즈 그랜드 볼륨은 <br>
+            약1,419㎡면적의 <br>가장 넓은 연회장으로<br>
+            극장식으로 배치시 <br>최대 1,500명 <br>규모의 행사가 가능합니다. <br>
+            6.25m의 천장 아래 <br>2면의 통유리로 되어 쏟아지는<br>
+            자연 채광으로 환하고 <br>역동적인 분위기를 <br>연출 할 수 있습니다.<br>
+            기둥 없이 아무것도 막혀 있지 않은 공간은<br> 회의의 집중도를 높일뿐만 아니라
+            효율적이고 편리한 이용을 가능하게 합니다.</span>
+
+        </div>
+      </li>
+
+      <li>
+        <p>01</p>
+        <div></div>
+      </li>
+
+      <li class="clear"></li>
+    </ul>
+
+    <div class="sec04_title">BANQUET</div>
+  </div>
+
+</section>
+
+
+  <!-- section04 dining end -->
+
+
+
+
+
+  <div class="line2"></div>
+
+
+
+  <!-- footer -->
+
+
+  <section class="sec06">
+
+
+    <div class="sec06_imgbox">
+      <div class="sec06_box1">
+        <p class="f-24">ANANTI HILTON BUSAN</p>
+        <p>
+          268-32, Gijanghaean-ro, Gijang-eup, Gijang-gun, Busan, Korea 46083<br>
+          T. 대표번호 +82 (0)51-509-1111 | 객실 예약 +82 (0)51-509-1114<br>
+          F. (0)51-509-2620 E. pushi_hotel@hilton.com 사업자등록번호 : 483-85-00667<br>
+          대표이사 : 이만규<br>
+          Copyright © 2017 All rights reserved ANANTI HILTON BUSAN
+        </p>
+      </div>
+
+
+      <div class="sec06_box2">
+        <p class="f-18">MENU</p>
+        <p>
+          <a href="roomsub1.html">ACCOMODATION</a><br>
+          <a href="facilitysub.html">Facility</a><br>
+          <a href="travelsub.html">Promotion</a><br>
+          <!-- <a href="diningsub.html">Dining</a><br>
+        <a href="positionsub.html">Position</a> -->
+        </p>
+      </div>
+
+      <div class="sec06_box3">
+        <p class="f-18">Follow Us</p>
+        <p>
+          <a href="https://ko-kr.facebook.com/theananti/" target="_blank"><i
+              class="fab fa-facebook-square f-24"></i></a>
+          <a href="https://www.instagram.com/ananti_life/" target="_blank"><i class="fab fa-instagram f-24"></i></a>
+        </p>
+      </div>
+
+      <div class="sec06_box4">
+        <p class="f-18">Subscribe Now</p>
+        <p>
+          <input type="email" value="" placeholder="Your E-mail">
+
+        </p>
+      </div>
+
+    </div>
+
+
+  </section>
+
+
+</body>
+
+<!-- aos -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</html>

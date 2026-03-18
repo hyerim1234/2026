@@ -1,0 +1,75 @@
+footer {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 22px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+footer .footer_con {
+  width: 100%;
+  max-width: 1400px;
+  padding: 55px 50px 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+footer .footer_con .foot_menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer .footer_con .foot_menu li {
+  text-align: center !important;
+}
+footer .footer_con .foot_menu li::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  background-color: #474553;
+  opacity: 0.3;
+  margin: 0 20px;
+}
+footer .footer_con .foot_menu li a {
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s;
+  color: inherit;
+  text-decoration: none;
+}
+footer .footer_con .foot_menu li a:hover {
+  color: #e66da5;
+}
+footer .footer_con .foot_menu li:last-child::after {
+  display: none;
+}
+footer .footer_con .btm {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-top: 1px solid #ddd;
+  padding-top: 30px;
+  margin-top: 35px;
+}
+footer .footer_con .btm.mob {
+  display: none;
+}
+footer .footer_con .btm .ft_copy {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+  word-break: keep-all;
+  line-height: 24px;
+  margin: 0;
+}
+footer .footer_con .btm span {
+  display: block;
+  margin-top: 15px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.4);
+  line-height: 24px;
+}/*# sourceMappingURL=footer.css.map */

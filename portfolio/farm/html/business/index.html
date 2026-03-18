@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>팜빌리지 사업소개</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="./../../css/index.css">
+</head>
+
+<style>
+  .left_line::before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 45px;
+    background-color: #fc0606;
+    left: 0;
+    top: 5px;
+    position: absolute;
+  }
+
+  h4::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 1px;
+    background-color: #000;
+    margin-top: 40px 0 !important;
+  }
+
+  .slick-track::before {
+    display: table;
+    content: "";
+  }
+
+  #sub_top_menu ul li .active {
+    background-color: #fff;
+    color: #333;
+    font-weight: 600;
+  }
+
+  .zig_wrap .border_box:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+</style>
+
+<body>
+  <div id="wrap">
+    <header id="mainHeader" class="fixed top-0 left-0 w-full z-30 bg-white/0 backdrop-blur-lg transition-all duration-300 border-b">
+
+      <div class="flex items-center justify-between px-4 py-4 max-w-6xl mx-auto">
+        <!-- 로고 -->
+        <div class="flex items-center justify-center">
+          <a href="./../../html/index.html" target="_self" class="hover:cursor-pointer">
+           <img src="./../../assets/img/logo.png" alt="로고" class="h-14 md:h-10 block hover:cusor-pointer cursor-pointer"   id="logoWhite">
+          </a>
+
+        </div>
+
+        <!-- 네비게이션 -->
+        <nav id="navBar"
+          class="hidden  lg:flex justify-between items-center gap-6 lg:gap-14 text-white font-semibold text-base md:text-xl">
+          <ul id="mainNav" class=" flex space-x-12">
+            <li class="group">
+              <a href="./../about/index.html" target="_blank" class="hover:text-gray-900 header-link">회사소개</a>
+              <div class="submenu ">
+                <div class="grid grid-cols-3 h-40">
+                  <!-- 왼쪽 (빨강) -->
+                  <div class="col-span-1 bg-red-600 p-6 flex justify-center items-center gap-8">
+                    <h2 class="text-white text-xl  md:text-3xl font-bold mb-2 ">회사소개</h2>
+                    <p class="text-white text-xs md:text-sm font-light">
+                    팜빌리지는 농업을 매개로 사람들과 소통하며,<br>
+                    서로 협력하여 함께 성장하는 길을 함께 찾아갑니다.
+                    </p>
+                  </div>
+                  <!-- 오른쪽 (회색) -->
+                  <div class="col-span-2 bg-gray-100 flex space-x-8 p-6">
+                    <ul class="flex items-center gap-10">
+                      <li class="w-96 hover:text-red-600">
+                        <a href="./../about/index.html#tab1" class="tab-btn text-lg text-gray-900  border-b-[1px] border-b-[#ccc] pb-[15px] w-[250px] flex items-center justify-between hover:text-red-600 hover:border-red-600">
+                          농업회사법인 팜빌리지(주)
+                          <svg class="w-5 h-5 text-[#ccc] hover:text-red-600" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="m9 5 7 7-7 7" />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li class="w-full">
+                        <a href="./../about/index.html#tab2" class="tab-btn  text-lg text-gray-900  border-b-[1px] border-b-[#ccc] pb-[15px]  flex items-center justify-between  hover:text-red-600 hover:border-red-600">
+                          오시는길
+                          <svg class="w-5 h-5 text-[#ccc] hover:text-red-600" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="m9 5 7 7-7 7" />
+                          </svg>
+
+                        </a>
+
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="group">
+              <a href="" class="hover:text-gray-900 header-link">사업소개</a>
+              <div class="submenu ">
+                <div class="grid grid-cols-3 h-40">
+                  <!-- 왼쪽 (빨강) -->
+                  <div class="col-span-1 bg-red-600 p-6 flex justify-center items-center gap-8">
+                    <h2 class="text-white text-xl  md:text-3xl font-bold mb-2 ">사업소개</h2>
+                    <p class="text-white text-xs md:text-sm font-light">
+                     팜빌리지는 농업을 매개로 사람들과 소통하며,<br>
+                    서로 협력하여 함께 성장하는 길을 함께 찾아갑니다.
+                    </p>
+                  </div>
+                  <!-- 오른쪽 (회색) -->
+                  <div class="col-span-2 bg-gray-100 flex space-x-8 p-6">
+                    <ul class="flex items-center gap-10">
+                      <li class="w-96 hover:text-red-600">
+                        <a href="#tab1"
+                          class="tab-btn text-lg text-gray-900  border-b-[1px] border-b-[#ccc] pb-[15px] w-full flex items-center justify-between hover:text-red-600 hover:border-red-600">
+                          아름다운 연구소
+                          <svg class="w-5 h-5 text-[#ccc] hover:text-red-600" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="m9 5 7 7-7 7" />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li class="w-full">
+                        <a href="#tab2"
+                          class="tab-btn  text-lg text-gray-900  border-b-[1px] border-b-[#ccc] pb-[15px]  flex items-center justify-between  hover:text-red-600 hover:border-red-600">
+                          세종청년마을 농땡이월드
+                          <svg class="w-5 h-5 text-[#ccc] hover:text-red-600" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="m9 5 7 7-7 7" />
+                          </svg>
+
+                        </a>
+
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="group">
+              <a href="./../product/index.html" class="hover:text-gray-900 header-link">제품소개</a>
+            </li>
+
+            <li class="group">
+              <a href="./../notice/index.html" class="hover:text-gray-900 header-link">공지/문의</a>
+              <div class="submenu ">
+                <div class="grid grid-cols-3 h-40">
+                  <!-- 왼쪽 (빨강) -->
+                  <div class="col-span-1 bg-red-600 p-6 flex justify-center items-center gap-8">
+                    <h2 class="text-white text-xl  md:text-3xl font-bold mb-2 ">공지/문의</h2>
+                    <p class="text-white text-xs md:text-sm font-light">
+                         팜빌리지는 농업을 매개로 사람들과 소통하며,<br>
+                    서로 협력하여 함께 성장하는 길을 함께 찾아갑니다.
+                    </p>
+                  </div>
+                  <!-- 오른쪽 (회색) -->
+                  <div class="col-span-2 bg-gray-100 flex space-x-8 p-6">
+                    <ul class="flex items-center gap-10">
+                      <li class="w-96 hover:text-red-600">
+                        <a href="./../notice/index.html#tab1"
+                          class="tab-btn text-lg text-gray-900  border-b-[1px] border-b-[#ccc] pb-[15px] w-full flex items-center justify-between hover:text-red-600 hover:border-red-600">
+                          공지사항
+                          <svg class="w-5 h-5 text-[#ccc] hover:text-red-600" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="m9 5 7 7-7 7" />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li class="w-full">
+                        <a href="./../notice/index.html#tab2"
+                          class="tab-btn  text-lg text-gray-900  border-b-[1px] border-b-[#ccc] pb-[15px]  flex items-center justify-between  hover:text-red-600 hover:border-red-600">
+                          FAQ
+                          <svg class="w-5 h-5 text-[#ccc] hover:text-red-600" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="m9 5 7 7-7 7" />
+                          </svg>
+
+                        </a>
+
+                      </li>
+
+                      <li class="w-full">
+                        <a href="./../notice/index.html#tab3"
+                          class="tab-btn  text-lg text-gray-900  border-b-[1px] border-b-[#ccc] pb-[15px]  flex items-center justify-between  hover:text-red-600 hover:border-red-600">
+                          기타문의
+                          <svg class="w-5 h-5 text-[#ccc] hover:text-red-600" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="m9 5 7 7-7 7" />
+                          </svg>
+
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="group">
+              <a href="./../reservation/index.html" class="hover:text-gray-900 header-link">예약안내</a>
+              <div class="submenu ">
+                <div class="grid grid-cols-3 h-40">
+                  <!-- 왼쪽 (빨강) -->
+                  <div class="col-span-1 bg-red-600 p-6 flex justify-center items-center gap-8">
+                    <h2 class="text-white text-xl  md:text-3xl font-bold mb-2 ">예약안내</h2>
+                    <p class="text-white text-xs md:text-sm font-light">
+                       팜빌리지는 농업을 매개로 사람들과 소통하며,<br>
+                    서로 협력하여 함께 성장하는 길을 함께 찾아갑니다.
+                    </p>
+                  </div>
+                  <!-- 오른쪽 (회색) -->
+                  <div class="col-span-2 bg-gray-100 flex space-x-8 p-6">
+                    <ul class="flex items-center gap-10">
+                      <li class="w-96 hover:text-red-600">
+                        <a href="./../reservation/index.html#tab1"
+                          class="tab-btn text-lg text-gray-900  border-b-[1px] border-b-[#ccc] pb-[15px] w-full flex items-center justify-between hover:text-red-600 hover:border-red-600">
+                          체험예약
+                          <svg class="w-5 h-5 text-[#ccc] hover:text-red-600" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="m9 5 7 7-7 7" />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li class="w-full">
+                        <a href="./../reservation/index.html#tab2"
+                          class="tab-btn  text-lg text-gray-900  border-b-[1px] border-b-[#ccc] pb-[15px]  flex items-center justify-between  hover:text-red-600 hover:border-red-600">
+                          대관안내
+                          <svg class="w-5 h-5 text-[#ccc] hover:text-red-600" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="m9 5 7 7-7 7" />
+                          </svg>
+
+                        </a>
+
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- 햄버거 -->
+        <button class=" text-white text-2xl" id="menuBtn"><i class="fa-solid fa-bars"></i></button>
+
+      </div>
+    </header>
+
+
+    <!-- 블러 오버레이 -->
+    <div id="navBlur"></div>
+
+    <!-- 사이드 네비(햄버거 메뉴) -->
+    <div id="sideHamMenu" class="fixed top-0 right-0 h-full w-full z-50 hidden">
+      <!-- 배경 오버레이 -->
+      <div id="overlay" class="absolute inset-0 /60 backdrop-blur-[2px] transition-opacity duration-300"></div>
+      <!-- 오른쪽 패널 -->
+      <aside  class="absolute top-0 right-0 w-full max-w-md bg-white h-full shadow-2xl transition-transform duration-300 translate-x-full"  id="sidePanel">
+        <div class="flex flex-col h-full">
+          <div class="flex justify-end p-6">
+            <button id="closeMenu" class="text-2xl text-red-600"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <nav class="flex-1 overflow-y-auto px-8 pb-8">
+            <ul class="space-y-8">
+              <li>
+                <a href="./../about/index.html" class="font-bold text-gray-900 text-lg mb-2">회사소개</a>
+                <ul class="ml-2 space-y-1 text-gray-600 text-sm">
+                  <li><a href="./../about/index.html#tab1" class="hover:text-red-600">농업회사법인 팜빌리지(주)</a></li>
+                  <li><a href="./../about/index.html#tab2" class="hover:text-red-600">오시는 길</a></li>
+                </ul>
+              </li>
+
+               <li>
+                <a href="" class="font-bold text-gray-900 text-lg mb-2">사업소개</a>
+                <ul class="ml-2 space-y-1 text-gray-600 text-sm">
+                  <li><a href="#tab1" class="hover:text-red-600">아름다운 연구소</a></li>
+                  <li><a href="#tab2" class="hover:text-red-600">세종 청년 농땡이 월드</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="./../product/index.html" class="font-bold text-gray-900 text-lg mb-2">제품소개</a>
+              </li>
+              <li>
+                <a href="./../notice/index.html" class="font-bold text-gray-900 text-lg mb-2">공지/문의</a>
+                <ul class="ml-2 space-y-1 text-gray-600 text-sm">
+                  <li><a href="./../notice/index.html#tab1" class="hover:text-red-600">공지사항</a></li>
+                  <li><a href="./../notice/index.html#tab2" class="hover:text-red-600">FAQ</a></li>
+                  <li><a href="./../notice/index.html#tab3" class="hover:text-red-600">기타문의</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="./../reservation/index.html" class="font-bold text-gray-900 text-lg mb-2">예약안내</a>
+                <ul class="ml-2 space-y-1 text-gray-600 text-sm">
+                  <li><a href="./../reservation/index.html#tab1" class="hover:text-red-600">체험예약</a></li>
+                  <li><a href="./../reservation/index.html#tab2" class="hover:text-red-600">대관안내</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </aside>
+    </div>
+
+
+
+    <!-- 비주얼 -->
+    <section
+      class="relative w-full h-[270px] md:h-[500px] mx-auto overflow-hidden bg-cover bg-center flex items-center justify-center"
+      style="background-image: url('./../../assets/img/company_bg.avif'); ">
+      <div class="absolute inset-0 bg-black/40"></div>
+      <!-- 로고 (모바일용 중앙) -->
+      <img src="/assets/img/logo.png" alt="로고" class="absolute top-8 left-1/2 -translate-x-1/2 h-10 md:hidden " />
+      <!-- 중앙 타이틀 -->
+      <h2 class="relative   text-white text-3xl md:text-[75px] font-extrabold text-center drop-shadow-lg">사업소개</h2>
+
+    </section>
+
+
+
+    <!-- 서브탭 (회사명/오시는길) -->
+    <nav id="sub_top_menu"
+      class="hidden sm:block md:block relative w-full  h-[70px] -mt-[70px] text-center z-[5] border-t-0 bg-white/15">
+      <ul class="flex justify-center w-full h-full max-w-[1400px] mx-auto text-white">
+        <li class="flex-1 max-w-[645px] transition-colors duration-200">
+          <a href="#tab1" id="tabBtn1"
+            class="tab-btn active flex items-center justify-center w-full h-full font-normal text-[20px] transform transition-all duration-300 break-keep px-[10px] hover:bg-white/20 active">
+            아름다운 연구소
+          </a>
+        </li>
+
+        <li class="flex-1 max-w-[645px] transition-colors duration-200 ">
+          <a href="#tab2" id="tabBtn2"
+            class="tab-btn flex items-center justify-center w-full h-full font-normal text-[20px] transform transition-all duration-300 break-keep px-[10px] hover:bg-white/20">
+            세종청년마을 농땡이월드
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+
+
+    <!-- tab contents -->
+    <div id="tab1" class="tab-content py-12 relative max-w-[1400px] mx-auto">
+      <main class="container mx-auto space-y-16 px-4 md:px-8 max-w-[1400px]">
+        <!-- 타이틀 -->
+        <h2
+          class="left_line text-2xl leading-[1.1] md:text-[50px] font-bold text-gray-900 relative  border-b border-b-[#000] pl-[22px] w-full pb-[50px]">
+          아름다운 연구소
+        </h2>
+
+        <!-- zigzag contents -->
+        <div class="grid grid-cols-1 gap-16">
+          <div
+            class="zig_wrap border_box border-b border-b-[#ddd] flex flex-col md:flex-row-reverse items-center gap-8 py-8 odd:md:flex-row-reverse even:md:flex-row">
+            <div class="img w-full md:w-1/2 px-4">
+              <img src="./../../assets/img/b_research.avif" alt="회사 사진"
+                class="w-full h-auto rounded-2xl border border-gray-300 object-cover" />
+            </div>
+
+            <div class="txt w-full md:w-1/2 space-y-4 px-4">
+              <h3 class="line_title text-2xl md:text-3xl font-extrabold leading-[1.2] mb-[35px] font-[700]">
+                <span class="text-[#fc0606] mr-2 text-2xl md:text-3xl font-extrabold">01</span>
+                아름다운 우리음식 연구소
+              </h3>
+
+              <p class="text-gray-700 text-base md:text-lg font-[400] leading-[1.3] tracking-[-0.36] pt-4">
+                아름다운 우리음식 연구소는 자연이 주는 소중한 재료를 통해 건강하고 맛있는 음식을 연구하고 나누는 공간입니다.<br>
+                지역의 농부들이 정성으로 길러낸 신선한 재료를 바탕으로 자연의 맛과 가치를 담은 건강한 먹거리를 제공하기 위해<br>
+                노력하고 있습니다. 뿐만 아니라, 시민들을 위한 쿠킹클래스를 통해 건강한 식생활의 즐거움을 함께 나누어 갑니다.
+              </p>
+
+              <div
+                class="cont2_box bg-[#f7f7f7] py-[18px] px-[32px] mt-[40px] flex items-center leading-[1.76] tracking-[-0.36px]">
+                <i class="fas fa-check-circle text-red-600 mr-2"></i>
+                프로그램 정보는 체험예약을 통해 확인 가능합니다.
+              </div>
+            </div>
+          </div>
+
+
+          <!-- 02  -->
+          <div
+            class="zig_wrap border_box border-b border-b-[#ddd] flex flex-col md:flex-row-reverse items-center gap-8 py-8 odd:md:flex-row-reverse even:md:flex-row">
+            <div class="img w-full md:w-1/2 px-4">
+              <img src="./../../assets/img/b_research.avif" alt="회사 사진"
+                class="w-full h-auto rounded-2xl border border-gray-300 object-cover" />
+            </div>
+
+            <div class="txt w-full md:w-1/2 space-y-4 px-4">
+              <h3 class="line_title text-2xl md:text-3xl font-extrabold leading-[1.2] mb-[35px] font-[700]">
+                <span class="text-[#fc0606] mr-2 text-2xl md:text-3xl font-extrabold">02</span>
+                아름다운 우리음식 연구소
+              </h3>
+
+              <p class="text-gray-700 text-base md:text-lg font-[400] leading-[1.3] tracking-[-0.36] pt-4">
+                아름다운 우리음식 연구소는 자연이 주는 소중한 재료를 통해 건강하고 맛있는 음식을 연구하고 나누는 공간입니다.<br>
+                지역의 농부들이 정성으로 길러낸 신선한 재료를 바탕으로 자연의 맛과 가치를 담은 건강한 먹거리를 제공하기 위해<br>
+                노력하고 있습니다. 뿐만 아니라, 시민들을 위한 쿠킹클래스를 통해 건강한 식생활의 즐거움을 함께 나누어 갑니다.
+              </p>
+
+            </div>
+          </div>
+
+
+          <!-- 03 -->
+          <div
+            class="zig_wrap border_box border-b border-b-[#ddd] flex flex-col md:flex-row-reverse items-center gap-8 py-8 odd:md:flex-row-reverse even:md:flex-row">
+            <div class="img w-full md:w-1/2 px-4">
+              <img src="./../../assets/img/b_research.avif" alt="회사 사진"
+                class="w-full h-auto rounded-2xl border border-gray-300 object-cover" />
+            </div>
+
+            <div class="txt w-full md:w-1/2 space-y-4 px-4">
+              <h3 class="line_title text-2xl md:text-3xl font-extrabold leading-[1.2] mb-[35px] font-[700]">
+                <span class="text-[#fc0606] mr-2 text-2xl md:text-3xl font-extrabold">03</span>
+                아름다운 우리음식 연구소
+              </h3>
+
+              <p class="text-gray-700 text-base md:text-lg font-[400] leading-[1.3] tracking-[-0.36] pt-4">
+                아름다운 우리음식 연구소는 자연이 주는 소중한 재료를 통해 건강하고 맛있는 음식을 연구하고 나누는 공간입니다.<br>
+                지역의 농부들이 정성으로 길러낸 신선한 재료를 바탕으로 자연의 맛과 가치를 담은 건강한 먹거리를 제공하기 위해<br>
+                노력하고 있습니다. 뿐만 아니라, 시민들을 위한 쿠킹클래스를 통해 건강한 식생활의 즐거움을 함께 나누어 갑니다.
+              </p>
+
+
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+
+
+
+
+
+
+    <!-- 세종 청년마을 농땡이 월드 -->
+
+    <!-- tab2: 농땡이 월드 -->
+    <div id="tab2" class="tab-content hidden py-12">
+      <div class="container mx-auto px-4 md:px-8 space-y-10">
+
+        <!-- 1) 타이틀 + 가운데 언더라인 -->
+        <div class="text-center">
+          <h2 class="inline-block text-2xl md:text-4xl font-bold text-gray-900">
+            농땡이월드
+          </h2>
+          <div class="w-16 h-1 bg-red-600 mx-auto mt-2"></div>
+        </div>
+
+        <!-- 2) 로고 그리드: 모바일 2열, md 이상 4열 -->
+        <ul class="grid grid-cols-2 gap-2 md:grid-cols-4 md:gap-4">
+          <li class="border border-gray-300 bg-white">
+            <img src="./../../assets/img/bu2_logo1.jpg" alt="행정안전부" class="object-contain w-full h-24 p-2" />
+          </li>
+          <li class="border border-gray-300 bg-white">
+            <img src="./../../assets/img/bu2_logo2.jpg" alt="청년마을" class="object-contain w-full h-24 p-2" />
+          </li>
+          <li class="border border-gray-300 bg-white">
+            <img src="./../../assets/img/bu2_logo3.jpg" alt="세종특별자치시" class="object-contain w-full h-24 p-2" />
+          </li>
+          <li class="border border-gray-300 bg-white">
+            <img src="./../../assets/img/bu2_logo4.jpg" alt="농땡이월드" class="object-contain w-full h-24 p-2" />
+          </li>
+        </ul>
+
+        <!-- 3) 프로젝트 설명 -->
+        <div class="bg-gray-100 p-6 md:p-12 text-center md:text-left text-lg md:text-2xl rounded-lg">
+          청년들의 지역 정착 및 새로운 삶의 기회를 제공하며 지역 활력 제고를 위한<br>
+          행정안전부의 <strong>'청년마을만들기' 프로젝트</strong>를 진행하고 있습니다.
+        </div>
+
+        <!-- 4) 본문 텍스트 -->
+        <div class="space-y-6 text-gray-700 text-base md:text-lg leading-relaxed">
+          <!-- 강조 헤드라인 -->
+          <h4 class="text-xl md:text-2xl font-bold text-center md:text-left">
+            매우 복잡하고 정신없이 바쁘지만 어딘가 모르게 허기진 청년의 시대를 살아가면서<br>
+            <strong>오롯이 나를 위한, 나만의 꿈을 꾸고 싶었던 청년들이 모입니다.</strong>
+          </h4>
+          <!-- 본문 -->
+          <p>
+            이곳에서는 미래가 풍요로운 삶만을 꿈꾸지 않습니다.<br>
+            그렇다고 지금의 일상생활을 소홀히 하지도 않습니다.<br>
+            그저 지금 내가 여기에 있다는 것, 지금 내가 보내는 삶이 한 층씩 쌓이는 것을 소중히 여기며 나만의 시간을 만들어 갑니다.<br><br>
+            건강하고 신선한 농작물을 가꾸며 앞집 할머니와 친구가 되고 직접 키운 농산물로 맛있는 식탁을 만들며 식구가 됩니다.<br>
+            잘 익은 복숭아 향에 빠져 피치 립밤을 뚝딱 만들어내는가 하면<br>
+            우리들의 이야기를 사진에 담아 특별한 사진전을 열기도 합니다.
+          </p>
+        </div>
+
+        <!-- 5) 인용 섹션 -->
+        <div class="relative bg-white border border-gray-200 p-6 md:p-12 overflow-hidden rounded-lg">
+          <!-- 배경 빅 따옴표 (좌상단 & 우하단) -->
+          <img src="/assets/img/quote2.png" alt="" class="absolute top-0 left-0 w-24 opacity-10" />
+          <img src="/assets/img/quote2.png" alt="" class="absolute bottom-0 right-0 w-24 opacity-10 rotate-180" />
+
+          <div class="flex flex-col md:flex-row md:items-start gap-6">
+            <!-- 좌측 강조 문구 -->
+            <div class="flex-1">
+              <h4 class="text-lg md:text-2xl font-bold text-gray-900 text-center md:text-left">
+                생각하는 대로 느끼는 대로 꿈꿀 수 있는 곳.<br>
+                보이는 대로 움직이는 대로 맛볼 수 있는 곳.
+              </h4>
+            </div>
+            <!-- 우측 설명 -->
+            <div class="flex-1 text-base md:text-lg text-gray-700">
+              농촌에서 땡잡는 이야기, 농촌이 땡기는 이유.<br>
+              농땡이월드의 맛있는 청년마을 만들기 프로젝트.<br>
+              2023년 첫 번째 이야기를 시작으로<br>
+              2024년, 2025년까지 우리의 이야기는 계속됩니다.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- 03. 프로그램 슬라이더 -->
+      <section class="sec2 py-[90px] bg-[#f7f7f7]">
+        <article class="sub_inner container mx-auto max-w-[1400px] w-full px-[50px] relative">
+
+          <!-- 슬라이더 UL -->
+
+          <ul class="slider flex justify-between items-center " data-aos="fade-in">
+            <button
+              class="slick-prev slick-arrow absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/30 text-white p-2 rounded-full z-10"
+              aria-label="Previous" type="button">
+              ‹
+            </button>
+            <!-- Slide #1: 지역사회협업 -->
+            <div class="slick-list overflow-visible">
+              <div class="slick-track">
+                <li class="slide bg-white border-[#ddd] border mx-[40px] p-[40px] w-[1300px] h-[670px]">
+                  <div class="bg-green-600 text-white font-semibold px-4 py-2 mb-4 h-20 text-3xl leading-[70px]">
+                    03. 프로그램 [지역사회협업]
+                  </div>
+                  <ul class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                    <li class="flex flex-col items-center">
+                      <img src="./../../assets/img/b_research.avif" alt="청년마을발대" class="w-60 h-60 object-cover" />
+                    </li>
+
+                    <li class="flex flex-col items-center">
+                      <img src="./../../assets/img/beatutiful_research.avif" alt="독립영화단체"
+                        class="w-60 h-60 object-cover" />
+                    </li>
+
+                    <li class="flex flex-col items-center">
+                      <img src="./../../assets/img/bu2_logo1.jpg" alt="외식창업단체" class="w-60 h-60 object-cover" />
+                    </li>
+
+                    <li class="flex flex-col items-center">
+                      <img src="./../../assets/img/c2_bg.jpg" alt="지역대학교" class="w-60 h-60 object-cover" />
+                    </li>
+                    <li class="flex flex-col items-center">
+                      <img src="./../../assets/img/company.avif" alt="초청식사" class="w-60 h-60 object-cover" />
+                      <span class="mt-2 bg-emerald-100 text-emerald-800 text-sm px-2 py-1 rounded">초청식사</span>
+                    </li>
+                    <li class="flex flex-col items-center">
+                      <img src="./../../assets/img/company_bg.avif" alt="한가위축제" class="w-60 h-60 object-cover" />
+                      <span class="mt-2 bg-emerald-100 text-emerald-800 text-sm px-2 py-1 rounded">한가위축제</span>
+                    </li>
+                    <li class="flex flex-col items-center">
+                      <img src="./../../assets/img/fresh.avif" alt="간식배달" class="w-60 h-60 object-cover" />
+                      <span class="mt-2 bg-emerald-100 text-emerald-800 text-sm px-2 py-1 rounded">간식배달</span>
+                    </li>
+                    <li class="flex flex-col items-center">
+                      <img src="./../../assets/img/youth.avif" alt="지역운동회" class="w-60 h-60 object-cover" />
+                      <span class="mt-2 bg-emerald-100 text-emerald-800 text-sm px-2 py-1 rounded">지역운동회</span>
+                    </li>
+                  </ul>
+                </li>
+              </div>
+
+            </div>
+
+
+            <button
+              class="slick-next slick-arrow absolute top-1/2 right-4 transform -translate-y-1/2 bg-black/30 text-white p-2 rounded-full z-10"
+              aria-label="Next" type="button">
+              ›
+            </button>
+
+          </ul>
+
+          <!-- Prev / Next 버튼 -->
+
+
+
+          <!-- 진행바 & 넘버 -->
+          <div class="contr aos-init aos-animate mt-6" data-aos="fade-in">
+            <div class="bar_wr w-full bg-gray-300 h-1 rounded overflow-hidden mb-2">
+              <div class="redbar redbar_active bg-green-600 h-full transition-all" style="width:33.33%"></div>
+            </div>
+            <div class="num_wr flex justify-end items-baseline space-x-1 text-lg font-bold">
+              <span class="current_num">01</span>
+              <i class="slash">/</i>
+              <span class="total_num">03</span>
+            </div>
+          </div>
+
+        </article>
+      </section>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+
+    <footer class="bg-[#030000] text-white py-10 px-4 md:px-12">
+      <div class="max-w-screen-2xl mx-auto">
+        <!-- 네비 -->
+        <nav class="flex flex-wrap justify-center items-center gap-4 md:gap-8 pb-8 border-b border-gray-700">
+          <a href="./about/index.html" class="hover:text-gray-400">회사소개</a>
+          <span class="hidden md:block border-l border-gray-600 h-4"></span>
+          <a href="./business/index.html" class="hover:text-gray-400">사업소개</a>
+          <span class="hidden md:block border-l border-gray-600 h-4"></span>
+          <a href="#" class="hover:text-gray-400">제품소개</a>
+          <span class="hidden md:block border-l border-gray-600 h-4"></span>
+          <a href="./notice/index.html" class="hover:text-gray-400">공지/문의</a>
+          <span class="hidden md:block border-l border-gray-600 h-4"></span>
+          <a href="./reservation/index.html" class="hover:text-gray-400">예약안내</a>
+          <a href="https://www.instagram.com/thanksworld_6" target="_blank" class="ml-2 flex items-center">
+            <i class="fa-brands fa-instagram text-pink-400 text-xl mr-1"></i>
+            <span class="hidden md:inline">Instagram</span>
+          </a>
+        </nav>
+        <!-- 하단 컨텐츠 -->
+        <div class="flex flex-col items-center md:flex-row md:items-start md:justify-between mt-8">
+          <!-- 좌측 텍스트 -->
+          <div class="text-center md:text-left max-w-3xl text-sm leading-relaxed space-y-2">
+            <p class="hidden md:block">
+              땡스 주식회사 ㅣ 대표이사 : 임국화 ㅣ 대표전화 : 044-865-8158 ㅣ PHONE : 010-4826-8158 ㅣ
+              E-MAIL : thanks8158@naver.com ㅣ
+              주소 : 세종특별자치시 연서면 불당골길 36 / 세종특별자치시 보듬6로 16 ㅣ
+              사업자등록번호 : 727-87-01255 ㅣ
+              운영시간 : 9:00~17:00(주말 및 공휴일 휴무)
+            </p>
+            <p class="md:hidden">
+              땡스 주식회사 ㅣ 대표이사 : 임국화<br />
+              대표전화 : 044-865-8158 ㅣ PHONE : 010-4826-8158<br />
+              E-MAIL : thanks8158@naver.com<br />
+              주소 : 세종특별자치시 연서면 불당골길 36 / 보듬6로 16<br />
+              사업자등록번호 : 727-87-01255<br />
+              운영시간 : 9:00~17:00(주말 및 공휴일 휴무)
+            </p>
+            <p class="text-sm">
+              <span class="hidden md:inline">
+                COPYRIGHT 땡스 주식회사 rights reserved
+                <a href="https://www.dwebs.kr" target="_blank" class="underline ml-2">Designed by
+                  DWEBS.</a>
+              </span>
+              <span class="md:hidden block">
+                COPYRIGHT 땡스 주식회사 rights reserved<br />
+                <a href="https://www.dwebs.kr" target="_blank" class="underline">Designed by DWEBS.</a>
+              </span>
+            </p>
+          </div>
+          <!-- 로고 (이미지로 교체, 중앙 정렬) -->
+          <div class="mt-6 md:mt-0 flex justify-center md:justify-end w-full md:w-auto">
+            <img src="/assets/img/thanks_logo_w.png" alt="THANKS 로고" class="h-16 mx-auto md:mx-0" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  </div>
+</body>
+
+<script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
+<script src="./js/index.js" defer></script>
+<script src="./../../js/common.js" defer></script>
+
+
+</html>

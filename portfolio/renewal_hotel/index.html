@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GEUMOSAN HOTEL</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+</head>
+
+<body class="theme-light">
+  <!-- Header -->
+  <header class="hdr" id="header">
+    <div class="container hdr__inner">
+      <div class="brand">
+        <div class="brand__mark" aria-hidden="true"></div>
+        <span class="brand__name">GEUMOSAN HOTEL</span>
+      </div>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu" aria-label="메뉴 열기">
+        <span class="nav__bar"></span>
+        <span class="nav__bar"></span>
+        <span class="nav__bar"></span>
+      </button>
+
+      <nav class="nav" id="navMenu" aria-label="주요 메뉴">
+        <ul class="menu">
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#rooms">Rooms</a></li>
+          <li><a class="nav__link" href="#dining">Dining</a></li>
+
+          <li class="has-sub">
+            <!-- 데스크톱: hover, 모바일: 클릭 토글 -->
+            <button type="button" class="nav__link nav__link--btn" aria-expanded="false" aria-haspopup="true">
+              Banquet
+            </button>
+            <ul class="dropdown" role="menu" aria-label="Banquet submenu">
+              <li role="none"><a role="menuitem" class="dropdown__link" href="#wedding">Wedding</a></li>
+              <li role="none"><a role="menuitem" class="dropdown__link" href="#packages">Packages</a></li>
+            </ul>
+          </li>
+
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+
+      <!-- 
+      <nav class="nav" id="navMenu" aria-label="Primary">
+        <a href="#rooms" class="nav__link">Rooms</a>
+        <a href="#dining" class="nav__link">Dining</a>
+        <a href="#wedding" class="nav__link">Wedding</a>
+        <a href="#banquet" class="nav__link">Banquet</a>
+        <a href="#packages" class="nav__link">Packages</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav> -->
+
+      <div class="hdr__cta">
+        <label class="select">
+          <span class="sr-only">Language</span>
+          <select>
+            <option>KR</option>
+            <option>EN</option>
+            <option>JP</option>
+            <option>CN</option>
+          </select>
+        </label>
+        <a href="#book" class="btn btn--primary">Book Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Floating Sidebar -->
+  <aside class="floatbar" aria-label="Quick links">
+    <a href="#" class="floatbar__item" aria-label="Instagram"><span>📸</span><em>Instagram</em></a>
+    <a href="#" class="floatbar__item" aria-label="Wedding Instagram"><span>💍</span><em>Wedding IG</em></a>
+    <a href="#" class="floatbar__item" aria-label="YouTube"><span>▶️</span><em>YouTube</em></a>
+    <a href="#" class="floatbar__item" aria-label="KakaoTalk"><span>💬</span><em>KakaoTalk</em></a>
+    <a href="#" class="floatbar__item" aria-label="Blog"><span>📝</span><em>Blog</em></a>
+  </aside>
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="hero__bg" role="img" aria-label="금오산 숲 전경"></div>
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <p class="hero__eyebrow">Deep in the Forest</p>
+      <h1 class="hero__title">자연 속 휴식과 쾌적한 공간의 <span>성공 비즈니스 파트너</span></h1>
+      <p class="hero__sub">청정 자연 속 호텔 금오산. 휴식과 컨퍼런스를 동시에 완성하는 올인원 리조트 & 컨벤션.</p>
+      <div class="hero__actions">
+        <a href="#rooms" class="btn btn--light">객실 살펴보기</a>
+        <a href="#banquet" class="btn btn--dark">행사 문의하기</a>
+      </div>
+    </div>
+
+    <div class="badges">
+      <!-- <div class="badge">
+        <p class="badge__title">자연 속 힐링</p>
+        <p class="badge__desc">금오산 국립공원 뷰</p>
+      </div>
+      <div class="badge">
+        <p class="badge__title">올인원 서비스</p>
+        <p class="badge__desc">숙박·다이닝·컨벤션</p>
+      </div>
+      <div class="badge">
+        <p class="badge__title">지역 랜드마크</p>
+        <p class="badge__desc">경상북도 산업유산 지정</p>
+      </div>
+      <div class="badge">
+        <p class="badge__title">글로벌 친화</p>
+        <p class="badge__desc">KR · EN · JP · CN</p>
+      </div> -->
+
+      <div class="badges">
+        <!-- <div class="container">
+          <a class="badge-link" href="#about" aria-label="자연 속 힐링 섹션으로 이동">
+            <p class="badge__title">자연 속 힐링</p>
+            <p class="badge__desc">금오산 국립공원 뷰</p>
+          </a>
+
+          <a class="badge-link" href="#overview" aria-label="올인원 서비스 섹션으로 이동">
+            <p class="badge__title">올인원 서비스</p>
+            <p class="badge__desc">숙박·다이닝·컨벤션</p>
+          </a>
+
+          <a class="badge-link" href="#about" aria-label="지역 랜드마크 섹션으로 이동">
+            <p class="badge__title">지역 랜드마크</p>
+            <p class="badge__desc">경상북도 산업유산 지정</p>
+          </a>
+
+          <a class="badge-link" href="#contact" aria-label="글로벌 친화 섹션으로 이동">
+            <p class="badge__title">글로벌 친화</p>
+            <p class="badge__desc">KR · EN · JP · CN</p>
+          </a>
+        </div> -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="section" id="overview">
+    <div class="container section__head">
+      <h2 class="section__title">서비스 한눈에</h2>
+      <a href="#packages" class="link">특가 패키지 보기 →</a>
+    </div>
+    <div class="container cards">
+      <a class="card" id="rooms" href="#rooms-detail">
+        <div class="card__media card__media--emerald"></div>
+        <div class="card__body">
+          <h3 class="card__title">Rooms</h3>
+          <p class="card__desc">아늑하고 모던한 휴식 공간</p>
+          <span class="card__more">자세히 보기</span>
+        </div>
+      </a>
+      <a class="card" id="wedding" href="#wedding-detail">
+        <div class="card__media card__media--rose"></div>
+        <div class="card__body">
+          <h3 class="card__title">Wedding</h3>
+          <p class="card__desc">야외 가든 & 웨딩홀</p>
+          <span class="card__more">자세히 보기</span>
+        </div>
+      </a>
+      <a class="card" id="banquet" href="#banquet-detail">
+        <div class="card__media card__media--indigo"></div>
+        <div class="card__body">
+          <h3 class="card__title">Banquet</h3>
+          <p class="card__desc">대연회장 · 회의실 · 컨벤션</p>
+          <span class="card__more">자세히 보기</span>
+        </div>
+      </a>
+      <a class="card" id="dining" href="#dining-detail">
+        <div class="card__media card__media--amber"></div>
+        <div class="card__body">
+          <h3 class="card__title">Dining</h3>
+          <p class="card__desc">한식·중식·양식 레스토랑</p>
+          <span class="card__more">자세히 보기</span>
+        </div>
+      </a>
+      <a class="card" id="packages" href="#packages-detail">
+        <div class="card__media card__media--teal"></div>
+        <div class="card__body">
+          <h3 class="card__title">Packages</h3>
+          <p class="card__desc">시즌별 특가 & 혜택</p>
+          <span class="card__more">자세히 보기</span>
+        </div>
+      </a>
+      <a class="card" id="offers" href="#offers-detail">
+        <div class="card__media card__media--slate"></div>
+        <div class="card__body">
+          <h3 class="card__title">Special Offer</h3>
+          <p class="card__desc">회원 전용 제안</p>
+          <span class="card__more">자세히 보기</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Business & Event Highlight -->
+  <section class="feature" id="banquet-detail">
+    <div class="container feature__grid">
+      <div class="feature__text">
+        <h2 class="feature__title">성공적인 비즈니스를 완성하는 컨벤션 센터</h2>
+        <p class="feature__lead">국제회의, 학술대회, 기업행사, 결혼식까지—최대 규모를 자랑하는 대연회장과 다양한 회의실, 최신 AV 장비를 갖춘 올인원 행사 공간입니다.</p>
+        <ul class="feature__list">
+          <li>최대 수용 ○○명 / 분할 가능 홀 구성</li>
+          <li>4K LED 월, 음향/조명 시스템</li>
+          <li>전문 MICE 운영팀 상주</li>
+        </ul>
+        <div class="feature__actions">
+          <a href="#contact" class="btn btn--primary">행사 상담 요청</a>
+          <a href="#packages" class="btn btn--outline">패키지 보기</a>
+        </div>
+      </div>
+      <div class="feature__media" role="img" aria-label="연회장 이미지"></div>
+    </div>
+  </section>
+
+  <!-- Map & Landmark -->
+  <section class="landmark" id="about">
+    <div class="container landmark__grid">
+      <div class="landmark__text">
+        <h2 class="landmark__title">지역 랜드마크, 경상북도 산업유산 지정</h2>
+        <p class="landmark__lead">지역의 역사와 함께하는 호텔 금오산은 여행과 비즈니스의 중심에 있습니다. 호텔 주변의 자연과 문화 명소를 함께 즐겨보세요.</p>
+        <div class="pills">
+          <span class="pill">산책로·폭포</span>
+          <span class="pill">금오산 케이블</span>
+          <span class="pill">전망 포인트</span>
+          <span class="pill">근교 맛집</span>
+        </div>
+      </div>
+      <div class="landmark__map" aria-hidden="true">
+        <div class="map__placeholder">🗺️<p>지도 영역(연동 가능)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <h2 class="section__title">고객 후기</h2>
+      <div class="quotes">
+        <figure class="quote">
+          <blockquote>“자연 속에서 힐링하며 컨퍼런스를 성공적으로 마쳤어요.”</blockquote>
+          <figcaption>— 방문 고객</figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote>“야외 가든 웨딩, 사진이 정말 예쁘게 나옵니다!”</blockquote>
+          <figcaption>— 방문 고객</figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote>“객실과 다이닝 모두 만족—가족여행에 추천합니다.”</blockquote>
+          <figcaption>— 방문 고객</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="ftr" id="contact">
+    <div class="container ftr__grid">
+      <div>
+        <div class="brand">
+          <div class="brand__mark" aria-hidden="true"></div>
+          <span class="brand__name">GEUMOSAN HOTEL</span>
+        </div>
+        <p class="ftr__text">경북 구미시 금오산로 400 | Tel. 054-450-4900</p>
+        <p class="ftr__copy">© <span data-year></span> Geumosan Hotel. All rights reserved.</p>
+      </div>
+      <div>
+        <h3 class="ftr__title">Quick Links</h3>
+        <ul class="ftr__links">
+          <li><a href="#book">객실 예약</a></li>
+          <li><a href="#banquet">연회·컨벤션 문의</a></li>
+          <li><a href="#wedding">웨딩 상담</a></li>
+          <li><a href="#contact">오시는 길</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="ftr__title">Follow</h3>
+        <ul class="ftr__links">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Wedding Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>

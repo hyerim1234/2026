@@ -1,0 +1,43 @@
+.container {
+  max-width: 100%;
+  min-height: 500px;
+  height: auto !important;
+  border: 2px solid #222;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.container #main_vis {
+  font-size: 50px;
+  font-size: 50px;
+  width: 100%;
+  height: 100vh;
+  min-height: 900px;
+  max-height: 1080px;
+  background-color: #ddd;
+}
+.container #c1_wrap {
+  padding: 90px 0 30px;
+  position: relative;
+  height: 650px;
+  background-color: #333;
+}
+.container #c1_wrap .c1_inner {
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 50px;
+  margin: 0 auto;
+  background-color: aliceblue;
+}
+.container #c2_wrap {
+  padding: 245px 0;
+  background-color: #444;
+}
+.container #c2_wrap div {
+  height: 582px;
+  display: flex;
+  align-items: center;
+  background-color: #ddd;
+}/*# sourceMappingURL=main_20250724092938.css.map */
