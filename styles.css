@@ -1744,23 +1744,32 @@ button {
   padding: 80px clamp(20px, 5vw, 72px);
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 32px;
+}
+
+.project-log .section-heading--split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 440px);
+  align-items: end;
+  gap: 32px;
 }
 
 .project-log__intro {
-  max-width: 320px;
+  max-width: 440px;
   margin: 0;
   color: #888888;
   font-size: 14.4px;
   font-weight: 400;
   line-height: 1.75;
+  justify-self: end;
+  text-align: left;
 }
 
 .project-log__table-head {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 170px 124px;
-  gap: 16px;
-  padding-bottom: 12px;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 320px) 160px;
+  gap: 24px;
+  padding-bottom: 14px;
   border-bottom: 1px solid #f0ede8;
 }
 
@@ -1789,10 +1798,10 @@ button {
 .project-log__row {
   width: 100%;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 170px 124px;
-  gap: 16px;
-  align-items: center;
-  padding: 20px 0;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 320px) 160px;
+  gap: 24px;
+  align-items: start;
+  padding: 26px 0 24px;
   border: 0;
   background: transparent;
   text-align: left;
@@ -1802,7 +1811,7 @@ button {
 .project-log__project {
   display: flex;
   align-items: flex-start;
-  gap: 12px;
+  gap: 14px;
   min-width: 0;
 }
 
@@ -1812,6 +1821,7 @@ button {
   line-height: 1;
   transform: rotate(-90deg);
   transition: transform 220ms ease, color 220ms ease;
+  margin-top: 4px;
 }
 
 .project-log__entry.is-open .project-log__chevron {
@@ -1822,7 +1832,7 @@ button {
 .project-log__project-main {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
   min-width: 0;
 }
 
@@ -1873,14 +1883,16 @@ button {
   color: #888888;
   font-size: 14px;
   font-weight: 500;
-  line-height: 20px;
-  overflow-wrap: anywhere;
+  line-height: 1.65;
+  align-self: center;
+  max-width: 300px;
 }
 
 .project-log__badge {
   justify-self: end;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   min-height: 28px;
   padding: 6px 12px;
   border-radius: 999px;
@@ -1888,6 +1900,7 @@ button {
   font-weight: 700;
   line-height: 16px;
   white-space: nowrap;
+  align-self: center;
 }
 
 .project-log__badge--success {
@@ -1930,7 +1943,7 @@ button {
 
 .project-log__details-inner {
   overflow: hidden;
-  padding: 0 0 24px 28px;
+  padding: 0 0 26px 30px;
 }
 
 .project-log__details-inner p {
